@@ -10,7 +10,7 @@ let powerParagraphs = [
   "Our platform is designed to support all major credit cards, making it easy for you to manage all your cards in one place.",
 ];
 
-const powerImg = document.querySelector(".power-image");
+const powerImg = document.querySelector(".power-image img");
 const powerP = document.querySelector(".power-image p");
 const powerLis = document.querySelectorAll(".power-ul li");
 
@@ -18,7 +18,7 @@ powerLis.forEach((li, index) => {
   li.addEventListener("click", function (e) {
     powerLis.forEach((li) => li.classList.remove("active"));
     e.currentTarget.classList.add("active");
-    powerImg.style.backgroundImage = `url('${urlImagesBg[index]}')`;
+    powerImg.src = urlImagesBg[index];
     powerP.textContent = powerParagraphs[index];
   });
 });

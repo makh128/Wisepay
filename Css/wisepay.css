@@ -194,10 +194,6 @@ p {
   text-transform: uppercase;
   letter-spacing: 1.55px;
 }
-.carousel-caption p {
-  width: 853px;
-  height: 42px;
-}
 
 .carousel-indicators button.active {
   width: 50px;
@@ -212,6 +208,10 @@ p {
   background-size: cover;
   opacity: 1;
 }
+.features .features-title {
+  padding: 16px;
+}
+
 .features .features-title h1 {
   font: normal normal bold 32px/78px Tahoma;
   color: var(--unnamed-color-ffffff);
@@ -245,7 +245,8 @@ p {
   }
   & .card-text {
     color: var(--unnamed-color-ffffff);
-    font: normal normal normal 14px/17px Tahoma;
+    font: normal Tahoma;
+    font-size: 14px;
   }
 }
 .features .card:hover {
@@ -285,6 +286,7 @@ p {
 /* End Vision */
 /* Start Power section */
 .power .list li {
+  font-size: 20px;
   font-weight: bold;
   color: gray;
   cursor: pointer;
@@ -292,11 +294,11 @@ p {
 .power .list li.active {
   color: black;
 }
-.power .list li:not(:last-child)::before {
+.power .list .effect::before {
   position: absolute;
   content: "";
   width: 2px;
-  height: 93px;
+  height: 160px;
   background-color: var(--unnamed-color-9f55f2);
   right: -10px;
   top: 35px;
@@ -330,17 +332,15 @@ p {
 
 .power-image {
   position: relative;
-  padding: 30px;
   width: 675px;
   height: 300px;
-  background-image: url(../Images/Personalized.png);
-  background-size: cover;
 }
 .power-image p {
   font-size: 15px;
   font: normal normal Tahoma;
   color: #ffffff;
 }
+
 /* End Power section */
 /* Start Install Section */
 .install {
@@ -356,13 +356,15 @@ p {
 .text {
   width: 500px;
   & h1 {
-    font-size: 55px;
+    font-size: 60px;
     color: #eab5f9;
   }
   & h6 {
+    font-size: 28px;
     color: #add3f7;
   }
   & p {
+    font-size: 19px;
     color: var(--unnamed-color-ffffff);
   }
 }
@@ -420,10 +422,6 @@ p {
   padding: 20px;
   height: 100vh;
   background-color: #f4f4f2;
-  & .contact-img img {
-    width: 553px;
-    height: 390px;
-  }
 }
 .contact-form p {
   font-size: 17px;
@@ -518,3 +516,83 @@ p {
 /* Start Blog Page */
 
 /* Start Blog Page */
+/* Media Queries */
+@media (max-width: 1200px) {
+  .power-image {
+    width: 650px;
+    height: 100%;
+  }
+  .contact-img img {
+    width: 500px;
+  }
+  .footer {
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .carousel-caption h5 {
+    font-size: 90px;
+  }
+  .carousel-caption p {
+    font-size: 15px;
+  }
+  .features .card .card-text {
+    font-size: 13px;
+  }
+  .features .card .card-title {
+    font-size: 17px;
+  }
+  .power {
+    margin-right: 2rem;
+  }
+  .power .list li {
+    font-size: 17px;
+  }
+  .power-image {
+    height: 270px;
+  }
+  .power-image p {
+    font-size: 12px;
+  }
+  .vision .card-text {
+    font-size: 14px;
+  }
+
+  .install .text {
+    width: 350px;
+    & h1 {
+      font-size: 40px;
+    }
+    & h6 {
+      font-size: 20px;
+    }
+    & p {
+      font-size: 16px;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .links img {
+      width: 150px;
+      height: 50px;
+    }
+  }
+  .contact {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .contact-img img {
+    padding-left: 20px;
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .vision .card {
+    width: 660px;
+  }
+  .vision .card .card-text {
+    font-size: 12px;
+  }
+}
