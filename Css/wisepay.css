@@ -581,7 +581,7 @@ p {
   }
   .contact {
     padding: 0;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   .contact-img img {
     padding-left: 20px;
@@ -594,5 +594,14 @@ p {
   }
   .vision .card .card-text {
     font-size: 12px;
+  }
+  .power .list .effect::before {
+    height: 175px;
+  }
+  .contact .contact-img img {
+    display: none;
+  }
+  .contact .contact-form {
+    width: 100%;
   }
 }
