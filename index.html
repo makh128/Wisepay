@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WISEPAY</title>
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="Fonts/Static font/Oswald-VariableFont_wght.ttf" />
+    <link rel="stylesheet" href="Fonts/Static font/static/Oswald-Bold.ttf" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./Css/wisepay.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <nav class="navbar navbar-expand-lg py-0 px-5 flex-wrap navbar-transparent">
+      <a href="index.html">
+        <img src="Images/logo ca.png" class="navbar-brand mx-4" alt="#" />
+      </a>
+      <ul class="navbar-nav flex-row ms-auto">
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#feature">Features</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#vision">Vision</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="blogs.html">Blogs</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#contact">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a href="signIn.html" class="btn fw-bold px-3 mx-3 sign-btn"
+            >Sign In</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- End Header -->
+    <!-- Start Carousel Section -->
+    <div class="main-page">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center smarta-model"
+        data-bs-toggle="modal"
+        data-bs-target="#smartaModel">
+        <img src="Images/smarta.png" alt="" />
+        <span>Chat with</span>
+        <span class="fw-bold">Smarta</span>
+      </div>
+      <div id="herosCarousel" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#herosCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+          <button
+            type="button"
+            data-bs-target="#herosCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button
+            type="button"
+            data-bs-target="#herosCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button
+            type="button"
+            data-bs-target="#herosCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="Images/hero1.png"
+              class="d-block w-100 hero-img"
+              alt="..." />
+            <div class="carousel-caption">
+              <h5>SAVE YOUR MONEY</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Images/hero2.png"
+              class="d-block w-100 hero-img"
+              alt="..." />
+            <div class="carousel-caption">
+              <h5>Introducing smarta</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Images/hero3.png"
+              class="d-block w-100 hero-img"
+              alt="..." />
+            <div class="carousel-caption">
+              <h5>get the maximum</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Images/hero4.png"
+              class="d-block w-100 hero-img"
+              alt="..." />
+            <div class="carousel-caption">
+              <h5>wise choice</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#herosCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#herosCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Start  Samrta Model -->
+      <div
+        class="modal fade"
+        id="smartaModel"
+        tabindex="-1"
+        aria-labelledby="smartaModelLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-14 fw-bold" id="smartaModelLabel">
+                Credit Advisor Research Assistant
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="samrat text-center">
+                <div>
+                  <img
+                    src="Images/smarta_big.png"
+                    style="width: 90px; height: 90px"
+                    alt="" />
+                </div>
+                <p class="main-color fw-bold" style="font-size: 15px">
+                  Smarta Research Assistant
+                </p>
+              </div>
+              <div class="smarta-inputs my-3">
+                <p class="m-2" style="font-size: 14px; color: #707070">
+                  To ensure the proper functioning of the assistant, please fill
+                  in the required fields.
+                </p>
+                <div class="inputs d-flex align-content-center">
+                  <div class="income d-flex">
+                    <div
+                      class="d-flex align-items-center justify-content-center m-2">
+                      <img
+                        src="Images/location.png"
+                        style="width: 15px; height: 15px"
+                        alt="" />
+                      <span class="mx-1">Income</span>
+                      <input
+                        type="text"
+                        placeholder="Enter Income Here"
+                        class="form-control mx-2"
+                        style="height: 36px" />
+                    </div>
+                  </div>
+                  <div class="location d-flex">
+                    <div
+                      class="d-flex align-items-center justify-content-center m-2">
+                      <img
+                        src="Images/location.png"
+                        style="width: 15px; height: 15px"
+                        alt="" />
+                      <span class="mx-1">Location</span>
+                      <input
+                        type="text"
+                        placeholder="Enter Location Here"
+                        class="form-control mx-2"
+                        style="height: 36px" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="questions p-2">
+                <p style="font-size: 14px; font-weight: bold">
+                  Simple Questions
+                </p>
+                <div class="d-flex align-items-center justify-content-around">
+                  <div
+                    class="question d-flex align-items-center justify-content-between">
+                    <p class="me-5" style="font-size: 12px">
+                      How much should I sepnd for grocery?
+                    </p>
+                    <img
+                      src="Images/arrow-right-10.png"
+                      style="width: 11px; height: 10px"
+                      alt="" />
+                  </div>
+                  <div
+                    class="question d-flex align-items-center justify-content-between">
+                    <p class="me-5" style="font-size: 12px">
+                      Should I buy Mercedes for 100000$
+                    </p>
+                    <img
+                      src="Images/arrow-right-10.png"
+                      style="width: 11px; height: 10px"
+                      alt="" />
+                  </div>
+                  <div
+                    class="question d-flex align-items-center justify-content-between">
+                    <p class="me-5" style="font-size: 12px">
+                      What's your approach to using React hooks vs. class
+                      components?
+                    </p>
+                    <img
+                      src="Images/arrow-right-10.png"
+                      style="width: 11px; height: 10px"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal-footer d-flex align-items-center justify-content-between">
+              <div class="flex-fill">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    style="border-radius: 9px"
+                    placeholder="Type a Question" />
+                  <div class="input-group-append c-pointer">
+                    <img src="Images/Icon ionic-md-send.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center w-auto c-pointer mx-4">
+                <img src="Images/Icon material-refresh.png" alt="" />
+                <p class="main-color ms-2">New Topic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Samrta Model -->
+    </div>
+    <!-- End Carousel Section-->
+    <!-- Start Features Section-->
+    <section
+      class="features d-flex align-items-center justify-content-center"
+      id="feature">
+      <div class="container row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="features-title">
+            <h1 class="fw-bold">Features</h1>
+            <p>Explore Our Wide Range Of Features.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="image">
+              <img
+                src="Images/Recommendation.png"
+                class="card-img-top"
+                alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Recommendation</h5>
+              <p class="card-text">
+                Recommend the best suitable credit card among yours for every
+                transaction .
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="image">
+              <img src="Images/wallet.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Wallet</h5>
+              <p class="card-text">
+                Learn about all your credit cards in one place for not missing
+                payments as well as less interest charge .
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="image">
+              <img src="Images/History.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">History</h5>
+              <p class="card-text">
+                Review all transactions with all credit cards in one place.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="image">
+              <img src="Images/Insights.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Insights</h5>
+              <p class="card-text">
+                Learn best about your monthly expenses for saving more with the
+                best lifestyle .
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="image">
+              <img src="Images/Ai.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ai</h5>
+              <p class="card-text">
+                Recommendation the best suitable credit card among yours for
+                every transaction .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Features Section -->
+    <!-- Start Vision Section-->
+    <section class="vision" id="vision">
+      <div class="container ms-0 ps-0">
+        <h1 class="vision-title py-5">Vision</h1>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title">About Our Vision</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="Images/Vision.png" class="w-100 h-100" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Vision Section -->
+    <!-- Start Power section -->
+    <sections class="power my-4">
+      <div
+        class="container d-flex align-items-center justify-content-center me-0">
+        <div class="power-image p-1 m-1">
+          <p class="text-light position-absolute bottom-0 p-4">
+            Our platform delivers personalized recommendations and insights
+            based on your unique financial situation and goals.
+          </p>
+        </div>
+        <div>
+          <h1 class="main-title text-end">Powerful Tools</h1>
+          <div class="list">
+            <ul class="d-flex flex-column pe-5 text-end power-ul">
+              <li class="py-4 fs-5 pe-2 position-relative">
+                Encrypted & Secure
+              </li>
+              <li class="py-4 ps-0 fs-5 pe-2 position-relative active">
+                Personalized
+              </li>
+              <li class="py-4 fs-5 pe-2 position-relative">
+                Universal credit card support
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </sections>
+    <!-- End Power Section -->
+    <!-- Start Install Section -->
+    <section class="install mt-5">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="mobile m-5">
+          <img src="Images/app.png" alt="Wisepay-App" />
+        </div>
+        <div class="text m-5">
+          <h1 class="fw-bold">WISEPAY</h1>
+          <h6 class="fw-bold fs-5">HELPS YOU SAVE MONEY</h6>
+          <p class="mb-5 fs-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            minus, asperiores totam ex omnis officiis. Cumque natus fugit fuga,
+            exercitationem neque atque recusandae, expedita ut suscipit
+            voluptatum necessitatibus, unde tempora!
+          </p>
+          <div class="links">
+            <a href="" class="me-2"><img src="Images/google.png" alt="" /></a>
+            <a href="" class="m-2"><img src="Images/apple.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Install Section -->
+    <!-- Start Blogs Section -->
+    <section class="blogs">
+      <div class="container">
+        <h1 class="main-title">Explore our blogs</h1>
+        <div
+          id="blogCarousel"
+          class="carousel slide my-5"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="card-group">
+                  <div class="col-4">
+                    <div class="card me-2">
+                      <img
+                        src="Images/img-temp.png"
+                        class="card-img-top c-pointer open-blog blog-img"
+                        alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Title Goes Here</h5>
+                        <p class="card-text">
+                          <small class="blog-date">August 15,2023</small>
+                        </p>
+                        <p class="card-text blog-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod tempor invidunt
+                        </p>
+                        <div class="explore open-blog">
+                          <a href="#"
+                            >Explore More
+                            <img src="Images/arrow-right.png" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card me-2">
+                      <img
+                        src="Images/img-temp.png"
+                        class="card-img-top c-pointer open-blog blog-img"
+                        alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Title Goes Here</h5>
+                        <p class="card-text">
+                          <small class="blog-date">August 15,2023</small>
+                        </p>
+                        <p class="card-text blog-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod tempor invidunt
+                        </p>
+                        <div class="explore open-blog">
+                          <a href="#"
+                            >Explore More
+                            <img src="Images/arrow-right.png" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card me-2">
+                      <img
+                        src="Images/img-temp.png"
+                        class="card-img-top c-pointer open-blog blog-img"
+                        alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Title Goes Here</h5>
+                        <p class="card-text">
+                          <small class="blog-date">August 15,2023</small>
+                        </p>
+                        <p class="card-text blog-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod tempor invidunt
+                        </p>
+                        <div class="explore open-blog">
+                          <a href="#"
+                            >Explore More
+                            <img src="Images/arrow-right.png" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="card-group">
+                  <div class="col-4">
+                    <div class="card me-2">
+                      <img
+                        src="Images/img-temp.png"
+                        class="card-img-top c-pointer open-blog blog-img"
+                        alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Title Goes Here</h5>
+                        <p class="card-text">
+                          <small class="blog-date">August 15,2023</small>
+                        </p>
+                        <p class="card-text blog-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod tempor invidunt
+                        </p>
+                        <div class="explore open-blog">
+                          <a href="#"
+                            >Explore More
+                            <img src="Images/arrow-right.png" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card me-2">
+                      <img
+                        src="Images/img-temp.png"
+                        class="card-img-top c-pointer open-blog blog-img"
+                        alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Title Goes Here</h5>
+                        <p class="card-text">
+                          <small class="blog-date">August 15,2023</small>
+                        </p>
+                        <p class="card-text blog-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod tempor invidunt
+                        </p>
+                        <div class="explore open-blog">
+                          <a href="#"
+                            >Explore More
+                            <img src="Images/arrow-right.png" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card me-2">
+                      <img
+                        src="Images/img-temp.png"
+                        class="card-img-top c-pointer open-blog blog-img"
+                        alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold">Title Goes Here</h5>
+                        <p class="card-text">
+                          <small class="blog-date">August 15,2023</small>
+                        </p>
+                        <p class="card-text blog-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod tempor invidunt
+                        </p>
+                        <div class="explore open-blog">
+                          <a href="#"
+                            >Explore More
+                            <img src="Images/arrow-right.png" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Prev And Next Buttons -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#blogCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#blogCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Blogs Section -->
+    <!-- Start Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h1 class="main-title py-2">Contact Us</h1>
+        <div class="row">
+          <div class="col contact-form">
+            <p class="pb-3">
+              Do you have any questios? Please do not hesitate to contact us
+              directly. Our team will come back to you within a matter of hours
+              to help you.
+            </p>
+            <form>
+              <div class="mb-3">
+                <label for="formName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formName"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="formEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="formEmail"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="formSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="formSubject" />
+              </div>
+              <div class="mb-3">
+                <label for="formMessage" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="formMessage"
+                  rows="5"
+                  style="resize: none"
+                  required></textarea>
+              </div>
+              <button type="submit" class="fw-bold w-100 sub-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div
+            class="col contact-img d-flex align-items-center justify-content-center">
+            <img src="Images/contactus.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div
+        class="footer-text d-flex align-items-center justify-content-between">
+        <span class="mx-5 fw-normal">
+          Wisepay Inc. Is A Property Of Skillizer Services&copy; All Rightd.
+          Reversed Reserved.Skillizer Services
+        </span>
+        <span class="mx-3">Privacey Policy</span>
+        <span class="me-5">Terns & Conditions</span>
+      </div>
+      <div class="social-media">
+        <span>Follow Us On Social Media</span>
+        <div class="social-imgs">
+          <a href="#">
+            <img
+              src="Images/facebook.png"
+              class="social-img"
+              alt="Wisepay-facebook" />
+          </a>
+          <a href="#"><img src="Images/x.png" alt="" class="social-img" /></a>
+          <a href="#"
+            ><img
+              src="Images/linked.png"
+              class="social-img"
+              alt="Wisepay-Linked" />
+          </a>
+          <a href="#"
+            ><img
+              src="Images/youtube.png"
+              class="social-img"
+              alt="Wisepay-Youtube" />
+          </a>
+          <a href="#"
+            ><img
+              src="Images/instgram.png"
+              class="social-img"
+              alt="Wisepay-Instgram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="bootstrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="wisepay.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WISEPAY</title>
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="Fonts/Static font/Oswald-VariableFont_wght.ttf" />
+    <link rel="stylesheet" href="Fonts/Static font/static/Oswald-Bold.ttf" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./Css/wisepay.css" />
+  </head>
+  <body>
+    <section class="forget">
+      <div class="row">
+        <div class="col img-container">
+          <img src="Images/Sign In.png" alt="" />
+        </div>
+        <div
+          class="col d-flex align-items-center justify-content-center p-4 flex-column">
+          <div class="container">
+            <h1 class="fw-bold ps-5">Forget Password ?</h1>
+            <form class="p-5">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  aria-describedby="emailHelp"
+                  required />
+                <div id="passwordHelpBlock" class="form-text">
+                  Please enter the code sent to your mail
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="passwordInput" class="form-label"
+                  >Code</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="passwordInput"
+                  required />
+              </div>
+              <button type="submit" class="w-100 sub-btn fw-bold">
+                Password Reset
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="bootstrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="wisepay.js"></script>
+  </body>
+</html>
