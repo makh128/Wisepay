@@ -128,6 +128,10 @@ p {
   border: 0.10000000149011612px solid var(--unnamed-color-c1c1c1);
   border-radius: 10px;
 }
+  .smarta-inputs .inputs .income,
+  .smarta-inputs .inputs .location {
+    width: 50%;
+  }
 .smarta-img {
   width: 90px;
   height: 90px;
@@ -624,6 +628,10 @@ p {
   }
   .questions div {
     flex-direction: column;
+  }
+  .smarta-inputs .inputs .income,
+  .smarta-inputs .inputs .location {
+    width: 100%;
   }
 }
 
