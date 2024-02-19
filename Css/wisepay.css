@@ -12,7 +12,6 @@
   /* Font/text values */
   --unnamed-font-family-tahoma: Tahoma;
   --unnamed-font-style-normal: normal;
-  --unnamed-font-weight-600: 600;
   --unnamed-font-weight-normal: normal;
   --unnamed-font-weight-bold: bold;
   --main-transition: 0.3s;
@@ -58,6 +57,9 @@ p {
 }
 .fs-14 {
   font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
 }
 
 .input-group .form-select:focus {
@@ -126,18 +128,19 @@ p {
   border: 0.10000000149011612px solid var(--unnamed-color-c1c1c1);
   border-radius: 10px;
 }
+.smarta-img {
+  width: 90px;
+  height: 90px;
+}
 .question {
   cursor: pointer;
   padding: 15px;
-  height: 47px;
+  margin: 10px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 2px 2px 8px #0000000d;
   border-radius: 9px;
 }
-.inputs input {
-  width: 400px;
-  height: 36px;
-}
+
 .smarta-model {
   right: 5rem;
   bottom: 2rem;
@@ -193,7 +196,7 @@ p {
 .carousel-caption h5 {
   font-size: 119px;
   font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-600);
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.55px;
 }
@@ -233,26 +236,25 @@ p {
   background-color: transparent;
   border: none;
   transition: var(--main-transition);
-  & .image {
-    padding: 16px 16px 0;
-  }
-  & .image img {
-    width: 40px;
-    height: 40px;
-  }
-  & .card-title {
-    font: var(--unnamed-font-style-normal) normal
-      var(--unnamed-font-weight-bold) 20px/24px
-      var(--unnamed-font-family-tahoma);
-    color: var(--unnamed-color-ffffff);
-  }
-  & .card-text {
-    color: var(--unnamed-color-ffffff);
-    font: normal Tahoma;
-    font-size: 14px;
-  }
 }
-.features .card:hover {
+.features .card .image {
+  padding: 16px 16px 0;
+}
+.features .card .image img {
+  width: 40px;
+  height: 40px;
+}
+.features .card .card-title {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    20px/24px var(--unnamed-font-family-tahoma);
+  color: var(--unnamed-color-ffffff);
+}
+.features .card .card-text {
+  color: var(--unnamed-color-ffffff);
+  font: normal Tahoma;
+  font-size: 14px;
+}
+.features .card .features .card:hover {
   background-color: rgba(27, 27, 27, 0.4);
 }
 
@@ -358,23 +360,24 @@ p {
 }
 .text {
   width: 500px;
-  & h1 {
-    font-size: 60px;
-    color: #eab5f9;
-  }
-  & h6 {
-    font-size: 28px;
-    color: #add3f7;
-  }
-  & p {
-    font-size: 19px;
-    color: var(--unnamed-color-ffffff);
-  }
 }
-.links a img {
+.text h1 {
+  font-size: 60px;
+  color: #eab5f9;
+}
+.text .links a img {
   width: 190px;
   height: 62px;
 }
+.text p {
+  font-size: 19px;
+  color: var(--unnamed-color-ffffff);
+}
+.text h6 {
+  font-size: 28px;
+  color: #add3f7;
+}
+
 /* End Install Section */
 /* Start Blogs Section */
 .blogs {
@@ -391,23 +394,23 @@ p {
 .blogs .card {
   background-color: transparent;
   border: none;
-  & .card-img-top {
-    margin: auto;
-    padding: 15px;
-  }
-  & .card-title {
-    font-size: 22px;
-    color: #252525;
-  }
-  & .blog-date {
-    font-size: 14px;
-    font-weight: var(--unnamed-font-weight-bold);
-    color: #252525;
-  }
-  & .blog-text {
-    font-size: 16px;
-    color: #585a5c;
-  }
+}
+.blogs .card .card-img-top {
+  margin: auto;
+  padding: 15px;
+}
+.blogs .card .card-title {
+  font-size: 22px;
+  color: #252525;
+}
+.blogs .card .blog-text {
+  font-size: 16px;
+  color: #585a5c;
+}
+.blogs .card .blog-date {
+  font-size: 14px;
+  font-weight: var(--unnamed-font-weight-bold);
+  color: #252525;
 }
 .blogs .carousel-control-next,
 .blogs .carousel-control-prev {
@@ -522,9 +525,6 @@ p {
   background-color: #f4f4f2;
 }
 /* End Blogs Page */
-/* Start Blog Page */
-
-/* Start Blog Page */
 /* Media Queries */
 @media (max-width: 1200px) {
   .power-image {
@@ -570,24 +570,24 @@ p {
 
   .install .text {
     width: 350px;
-    & h1 {
-      font-size: 40px;
-    }
-    & h6 {
-      font-size: 20px;
-    }
-    & p {
-      font-size: 16px;
-    }
-    .links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .links img {
-      width: 150px;
-      height: 50px;
-    }
+  }
+  .install .text h1 {
+    font-size: 40px;
+  }
+  .install .text p {
+    font-size: 16px;
+  }
+  .install .text h6 {
+    font-size: 20px;
+  }
+  .install .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .install .links img {
+    width: 150px;
+    height: 50px;
   }
   .contact {
     padding: 0;
@@ -618,6 +618,12 @@ p {
   }
   .contact .contact-form {
     width: 100%;
+  }
+  .smarta-inputs .inputs {
+    flex-direction: column;
+  }
+  .questions div {
+    flex-direction: column;
   }
 }
 
