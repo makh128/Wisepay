@@ -282,6 +282,7 @@ p {
   background: url(../Images/bg_vision.png) no-repeat;
   background-position: right top;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* End Vision */
