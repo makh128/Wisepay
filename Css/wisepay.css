@@ -58,6 +58,9 @@ p {
 .fs-14 {
   font-size: 14px;
 }
+.fs-17 {
+  font-size: 17px;
+}
 .fs-12 {
   font-size: 12px;
 }
@@ -117,22 +120,23 @@ p {
   font: var(--unnamed-font-family-tahoma);
 }
 /* End navbar */
-/* Start Smarta Model */
-.modal-body {
+
+/* Start Sage Model */
+.sage-model .modal-body {
   background: #f8f8f8 0% 0% no-repeat padding-box;
   background-image: url(../Images/smarta_en_bg.png);
 }
-.smarta-inputs,
+.sage-inputs,
 .questions {
   background: #fcfcfc 0% 0% no-repeat padding-box;
   border: 0.10000000149011612px solid var(--unnamed-color-c1c1c1);
   border-radius: 10px;
 }
-.smarta-inputs .inputs .income,
-.smarta-inputs .inputs .location {
+.sage-inputs .inputs .income,
+.sage-inputs .inputs .location {
   width: 50%;
 }
-.smarta-img {
+.sage-img {
   width: 90px;
   height: 90px;
 }
@@ -167,9 +171,9 @@ p {
   border-radius: 9px;
   z-index: 1000; /* To ensure the icon stays above the input */
 }
-/* End Smarta Model */
+/* End Sage Model */
 
-/* Start Carousel Section */
+/* Start Main Section */
 .hero-img {
   width: 100%;
   height: 100vh;
@@ -209,7 +213,16 @@ p {
   width: 50px;
   background-color: var(--unnamed-color-9f55f2);
 }
-/* End Carousel Section */
+/* End Main Section */
+
+/* Start News Section*/
+.news {
+  width: 100%;
+  height: 120px;
+  background-color: #df5df2;
+}
+/* Start News Section*/
+
 /* Start Features */
 .features {
   width: 100%;
@@ -265,32 +278,10 @@ p {
 /* End Features */
 
 /* Start Vision */
-.vision {
+.power {
   background: url(../Images/bg_vision.png) no-repeat;
   background-position: right top;
-}
-.vision .vision-title {
-  padding: 30px;
-  font: bold 40px/20px Tahoma;
-  color: #252525;
-}
-.vision .card {
-  border: none;
-  width: 90%;
-}
-.vision .card .card-body {
-  box-shadow: 0px 0px 5px #00000029;
-  height: 100%;
-  border: 1px solid transparent;
-}
-.vision .card-title {
-  font: normal normal normal 32px/39px Tahoma;
-  color: #252525;
-  text-transform: capitalize;
-}
-.vision .card-text {
-  font-size: 18px;
-  color: #000000;
+  padding-top: 100px;
 }
 
 /* End Vision */
@@ -438,13 +429,12 @@ p {
 }
 /* End Blogs Section */
 /* Start Contact Section */
-.contact {
-  padding: 20px;
-  height: 100vh;
-  background-color: #f4f4f2;
+.contact-model .modal-body {
+  background: #f4f4f2 0% 0% no-repeat padding-box;
 }
-.contact-form p {
-  font-size: 17px;
+.contact-model .contact-img img {
+  width: 100%;
+  height: 100%;
 }
 /* End Contact Section */
 
@@ -539,9 +529,6 @@ p {
     width: 650px;
     height: 100%;
   }
-  .contact-img img {
-    width: 500px;
-  }
   .footer {
     justify-content: center;
   }
@@ -572,9 +559,6 @@ p {
   .power-image p {
     font-size: 12px;
   }
-  .vision .card-text {
-    font-size: 14px;
-  }
 
   .install .text {
     width: 350px;
@@ -597,23 +581,12 @@ p {
     width: 150px;
     height: 50px;
   }
-  .contact {
-    padding: 0;
-    padding-bottom: 20px;
-  }
-  .contact-img img {
-    padding-left: 20px;
-    width: 400px;
-  }
 }
 
 @media (max-width: 768px) {
   .navbar .navbar-brand {
     width: 55px;
     height: 50px;
-  }
-  .vision .card .card-text {
-    font-size: 11px;
   }
   .power .list .effect::before {
     height: 175px;
@@ -637,12 +610,6 @@ p {
     width: 148px;
     height: 50px;
   }
-  .contact .contact-img img {
-    display: none;
-  }
-  .contact .contact-form {
-    width: 100%;
-  }
   .smarta-inputs .inputs {
     flex-direction: column;
   }
@@ -658,12 +625,6 @@ p {
 @media (max-width: 600px) {
   .navbar {
     height: 100%;
-  }
-  .vision .card .card-title {
-    font-size: 20px;
-  }
-  .vision .card .card-text {
-    font-size: 9px;
   }
   .blogs-section .heading-bar {
     flex-direction: column;
