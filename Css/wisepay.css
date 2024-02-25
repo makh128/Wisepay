@@ -128,10 +128,10 @@ p {
   border: 0.10000000149011612px solid var(--unnamed-color-c1c1c1);
   border-radius: 10px;
 }
-  .smarta-inputs .inputs .income,
-  .smarta-inputs .inputs .location {
-    width: 50%;
-  }
+.smarta-inputs .inputs .income,
+.smarta-inputs .inputs .location {
+  width: 50%;
+}
 .smarta-img {
   width: 90px;
   height: 90px;
@@ -276,6 +276,7 @@ p {
 }
 .vision .card {
   border: none;
+  width: 90%;
 }
 .vision .card .card-body {
   box-shadow: 0px 0px 5px #00000029;
@@ -362,22 +363,25 @@ p {
   align-items: center;
   overflow: hidden;
 }
-.text {
+.install .mobile {
+  margin-right: 3rem;
+}
+.install .text {
   width: 500px;
 }
-.text h1 {
+.install .text h1 {
   font-size: 60px;
   color: #eab5f9;
 }
-.text .links a img {
+.install .text .links a img {
   width: 190px;
   height: 62px;
 }
-.text p {
+.install .text p {
   font-size: 19px;
   color: var(--unnamed-color-ffffff);
 }
-.text h6 {
+.install .text h6 {
   font-size: 28px;
   color: #add3f7;
 }
@@ -608,14 +612,31 @@ p {
     width: 55px;
     height: 50px;
   }
-  .vision .card {
-    width: 660px;
-  }
   .vision .card .card-text {
-    font-size: 12px;
+    font-size: 11px;
   }
   .power .list .effect::before {
     height: 175px;
+  }
+  .install .mobile {
+    margin-right: 0;
+  }
+  .install .mobile img {
+    width: 220px;
+  }
+  .install .text h1 {
+    font-size: 40px;
+  }
+
+  .install .text p {
+    font-size: 14px;
+  }
+  .install .text h6 {
+    font-size: 20px;
+  }
+  .install .text .links a img {
+    width: 150px;
+    height: 50px;
   }
   .contact .contact-img img {
     display: none;
@@ -638,6 +659,12 @@ p {
 @media (max-width: 600px) {
   .navbar {
     height: 100%;
+  }
+  .vision .card .card-title {
+    font-size: 20px;
+  }
+  .vision .card .card-text {
+    font-size: 9px;
   }
   .blogs-section .heading-bar {
     flex-direction: column;
