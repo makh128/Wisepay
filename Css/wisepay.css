@@ -627,7 +627,6 @@ p {
   .install .text h1 {
     font-size: 40px;
   }
-
   .install .text p {
     font-size: 14px;
   }
@@ -635,7 +634,7 @@ p {
     font-size: 20px;
   }
   .install .text .links a img {
-    width: 150px;
+    width: 148px;
     height: 50px;
   }
   .contact .contact-img img {
