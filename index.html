@@ -14,16 +14,20 @@
   </head>
   <body>
     <!-- Start Header -->
-    <nav class="navbar navbar-expand-lg py-0 px-5 flex-wrap navbar-transparent">
-      <a href="index.html">
-        <img src="Images/logo ca.png" class="navbar-brand mx-4" alt="#" />
-      </a>
+    <nav class="navbar px-5 flex-wrap navbar-transparent">
+      <div class="d-flex align-items-center justify-content-center">
+        <a href="index.html">
+          <img src="Images/logo ca.png" class="navbar-brand mx-4" alt="#" />
+        </a>
+        <div class="sign-container">
+          <a href="signIn.html" class="btn fw-bold px-3 mx-3 sign-btn"
+            >Sign Up</a
+          >
+        </div>
+      </div>
       <ul class="navbar-nav flex-row ms-auto">
         <li class="nav-item px-2">
           <a class="nav-link" href="#features">Features</a>
-        </li>
-        <li class="nav-item px-2">
-          <a class="nav-link" href="#vision">Vision</a>
         </li>
         <li class="nav-item px-2">
           <a class="nav-link" href="blogs.html">Blogs</a>
@@ -32,9 +36,7 @@
           <a class="nav-link" href="#contact">Contact us</a>
         </li>
         <li class="nav-item">
-          <a href="signIn.html" class="btn fw-bold px-3 mx-3 sign-btn"
-            >Sign In</a
-          >
+          <a href="#install" class="btn fw-bold px-3 mx-3 sign-btn">Download</a>
         </li>
       </ul>
     </nav>
@@ -364,7 +366,7 @@
     </section>
     <!-- End Features Section -->
     <!-- Start Vision Section-->
-    <section class="vision" id="vision">
+    <!-- <section class="vision" id="vision">
       <h1 class="vision-title py-5">Vision</h1>
       <div class="card mb-3">
         <div class="row g-0">
@@ -387,7 +389,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- End Vision Section -->
     <!-- Start Power section -->
     <sections
@@ -418,7 +420,7 @@
     </sections>
     <!-- End Power Section -->
     <!-- Start Install Section -->
-    <section class="install mt-5">
+    <section class="install mt-5" id="install">
       <div class="container d-flex align-items-center justify-content-center">
         <div class="mobile">
           <img src="Images/app.png" alt="Wisepay-App" />
@@ -628,7 +630,7 @@
     </section>
     <!-- End Blogs Section -->
     <!-- Start Contact Section -->
-    <section class="contact" id="contact">
+    <section class="contact">
       <div class="container">
         <h1 class="main-title py-2">Contact Us</h1>
         <div class="row">
