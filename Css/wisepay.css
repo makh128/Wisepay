@@ -616,14 +616,14 @@ p {
     width: 148px;
     height: 50px;
   }
-  .smarta-inputs .inputs {
+  .sage-inputs .inputs {
     flex-direction: column;
   }
   .questions div {
     flex-direction: column;
   }
-  .smarta-inputs .inputs .income,
-  .smarta-inputs .inputs .location {
+  .sage-inputs .inputs .income,
+  .sage-inputs .inputs .location {
     width: 100%;
   }
 }

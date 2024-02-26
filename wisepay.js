@@ -79,3 +79,31 @@ for (let i = 0; i < accordion.length; i++) {
     this.classList.toggle("active");
   });
 }
+
+// Sage Chat Section
+
+const userSignUp = false;
+// const signUpBtn = document.querySelector(".sign-container .sign-btn");
+// if (userSignUp) {
+//   signUpBtn.style.display = "none";
+// }
+
+const sageInput = document.querySelector(".sage-input");
+const sageSendBtn = document.querySelector(".sage-send");
+const sageNewTopic = document.querySelector(".sage-new-btn");
+
+sageSendBtn.addEventListener("click", function () {
+  if (sageInput.value != "") {
+    console.log("sended");
+  } else {
+    console.log("not sended , input is empty");
+  }
+});
+
+sageNewTopic.addEventListener("click", handelNewTopic);
+
+function handelNewTopic() {
+  if (sageInput) {
+    sageInput.value = "";
+  }
+}
