@@ -215,13 +215,24 @@ p {
 }
 /* End Main Section */
 
-/* Start News Section*/
-.news {
+/* Start ticker Section*/
+.ticker {
   width: 100%;
   height: 120px;
   background-color: #df5df2;
 }
-/* Start News Section*/
+.ticker .ticker-line {
+  animation: ticker 25s infinite linear;
+}
+@keyframes ticker {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-1279px);
+  }
+}
+/* End ticker Section*/
 
 /* Start Features */
 .features {
@@ -231,10 +242,6 @@ p {
   background-size: cover;
   opacity: 1;
 }
-.features .features-title {
-  padding: 16px;
-}
-
 .features .features-title h1 {
   font: normal normal bold 32px/78px Tahoma;
   color: var(--unnamed-color-ffffff);
@@ -257,6 +264,9 @@ p {
 .features .card .image {
   padding: 16px 16px 0;
 }
+.features .card:hover {
+  background-color: rgba(27, 27, 27, 0.4);
+}
 .features .card .image img {
   width: 40px;
   height: 40px;
@@ -268,13 +278,8 @@ p {
 }
 .features .card .card-text {
   color: var(--unnamed-color-ffffff);
-  font: normal Tahoma;
-  font-size: 14px;
+  font: normal normal normal 14px/17px Tahoma;
 }
-.features .card .features .card:hover {
-  background-color: rgba(27, 27, 27, 0.4);
-}
-
 /* End Features */
 
 /* Start Vision */
