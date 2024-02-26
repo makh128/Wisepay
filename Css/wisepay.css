@@ -169,7 +169,23 @@ p {
   top: 50%;
   transform: translateY(-50%);
   border-radius: 9px;
-  z-index: 1000; /* To ensure the icon stays above the input */
+  z-index: 10; /* To ensure the icon stays above the input */
+}
+
+.signed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-name {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 476px;
+  height: 70px;
+  padding: 15px;
+  background-color: #efe4f2;
+  border-radius: 9px;
 }
 /* End Sage Model */
 

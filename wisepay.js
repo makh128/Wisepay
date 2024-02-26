@@ -82,15 +82,11 @@ for (let i = 0; i < accordion.length; i++) {
 
 // Sage Chat Section
 
-const userSignUp = false;
-// const signUpBtn = document.querySelector(".sign-container .sign-btn");
-// if (userSignUp) {
-//   signUpBtn.style.display = "none";
-// }
-
 const sageInput = document.querySelector(".sage-input");
 const sageSendBtn = document.querySelector(".sage-send");
 const sageNewTopic = document.querySelector(".sage-new-btn");
+const sageDiv = document.querySelector(".sage");
+console.log(sageDiv);
 
 sageSendBtn.addEventListener("click", function () {
   if (sageInput.value != "") {
@@ -106,4 +102,15 @@ function handelNewTopic() {
   if (sageInput) {
     sageInput.value = "";
   }
+}
+
+const user = "Mahmoud";
+const userSignUp = true;
+
+if (userSignUp) {
+  sageDiv.classList.add("signed");
+  const userWelcome = sageDiv.querySelector(".user-welcome");
+  userWelcome.classList.add("user-name");
+  const userName = document.querySelector(".welcome-name");
+  userName.textContent = `Hello , ${user}`;
 }
