@@ -68,3 +68,14 @@ document.addEventListener("DOMContentLoaded", function () {
   blogImage.src = image;
   blogText.textContent = pText;
 });
+
+let accordion = document.getElementsByClassName("content-container");
+
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    // for (let i = 0; i < accordion.length; i++) {
+    //   accordion[i].classList.remove("active");
+    // }
+    this.classList.toggle("active");
+  });
+}
