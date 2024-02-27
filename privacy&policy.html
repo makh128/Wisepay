@@ -16,26 +16,39 @@
   </head>
   <body>
     <!-- Start Header -->
-    <nav class="navbar navbar-expand-lg py-0 px-5 blogs-nav">
+    <nav class="navbar navbar-expand-md py-0 px-5 blogs-nav">
       <a href="index.html">
         <img src="Images/logo ca.png" class="navbar-brand mx-4" alt="#" />
       </a>
-      <ul class="navbar-nav flex-row ms-auto">
-        <li class="nav-item px-2">
-          <a class="nav-link" href="index.html#features">Features</a>
-        </li>
-        <li class="nav-item px-2">
-          <a class="nav-link" href="blogs.html">Blogs</a>
-        </li>
-        <li class="nav-item px-2">
-          <a class="nav-link" href="index.html#contact">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a href="signIn.html" class="btn fw-bold px-3 mx-3 sign-btn"
-            >Sign In</a
-          >
-        </li>
-      </ul>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto navbar-ul">
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item px-2">
+            <a
+              class="nav-link"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#contactmodal"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- End Header -->
     <section class="privacy">
@@ -201,11 +214,10 @@
     </footer>
     <!-- End Footer -->
     <!-- JavaScript Libraries -->
-    <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
-    <script src="bootstrap/js/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
+    <script src="bootstrap/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="bootstrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="wisepay.js"></script>
   </body>
 </html>
