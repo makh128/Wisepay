@@ -30,6 +30,9 @@
                 id="emailInput"
                 aria-describedby="emailHelp"
                 required />
+              <div class="invalid-feedback email">
+                This mail does not exist in our record
+              </div>
             </div>
             <div class="mb-3">
               <label for="passwordInput" class="form-label">Password</label>
@@ -38,6 +41,9 @@
                 class="form-control sign-password"
                 id="passwordInput"
                 required />
+              <div class="invalid-feedback password">
+                Oops, that wasn't the right password. Try again.
+              </div>
             </div>
             <div class="mb-3 text-end">
               <a href="forget.html" class="mb-5 main-color"
@@ -55,6 +61,7 @@
                 >I don't have an account</a
               >
             </div>
+            
           </form>
         </div>
       </div>

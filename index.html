@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Start Header -->
-    <nav class="navbar px-5 flex-wrap navbar-transparent">
+    <nav class="navbar navbar-expand-md px-5 flex-wrap navbar-transparent">
       <div class="d-flex align-items-center justify-content-center">
         <a href="index.html">
           <img src="Images/logo ca.png" class="navbar-brand mx-4" alt="#" />
@@ -24,36 +24,75 @@
             >Sign Up</a
           >
         </div>
+        <div class="btn-group user-info d-none">
+          <button
+            type="button"
+            class="btn text-light border-0 dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Welcome <span class="wel-name"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item border-bottom border-2 user-nick"
+                href="#"></a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item border-bottom border-2 user-email"
+                href="#"></a>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#signOutModal">
+              <a class="dropdown-item main-color fw-bold sign-out" href="#"
+                >Sign out</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="navbar-nav flex-row ms-auto">
-        <li class="nav-item px-2">
-          <a class="nav-link" href="#features">Features</a>
-        </li>
-        <li class="nav-item px-2">
-          <a class="nav-link" href="blogs.html">Blogs</a>
-        </li>
-        <li class="nav-item px-2">
-          <a
-            class="nav-link"
-            href="#"
-            data-bs-toggle="modal"
-            data-bs-target="#contactModel"
-            >Contact us</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#install" class="btn fw-bold px-3 mx-3 sign-btn">Download</a>
-        </li>
-      </ul>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto navbar-ul">
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item px-2">
+            <a
+              class="nav-link"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#contactmodal"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#install" class="btn fw-bold px-3 sign-btn">Download</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- End Header -->
 
     <!-- Start Main Section -->
     <div class="main-page">
       <div
-        class="d-flex flex-column align-items-center justify-content-center smarta-model"
+        class="d-flex flex-column align-items-center justify-content-center smarta-modal"
         data-bs-toggle="modal"
-        data-bs-target="#sageModel">
+        data-bs-target="#sagemodal">
         <img src="Images/smarta.png" alt="" />
         <span>Ask</span>
         <span class="fw-bold">Sage</span>
@@ -158,11 +197,11 @@
     <!--Start ticker  -->
     <section class="ticker d-flex align-items-center justify-content-center">
       <div class="ticker-line d-flex">
-        <p class="mx-2">
+        <p class="mx-2 w-100">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </p>
 
-        <p class="mx-2">
+        <p class="mx-2 w-100">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae
           aut maiores voluptate adipisci accusantium
         </p>
@@ -170,19 +209,19 @@
     </section>
     <!--End ticker  -->
 
-    <!--Start Models  -->
+    <!--Start modals  -->
 
-    <!-- Start  Sage Model -->
+    <!-- Start Sage modal -->
     <div
-      class="modal fade sage-model"
-      id="sageModel"
+      class="modal fade sage-modal"
+      id="sagemodal"
       tabindex="-1"
-      aria-labelledby="sageModelLabel"
+      aria-labelledby="sagemodalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-14 fw-bold" id="sageModelLabel">
+            <h1 class="modal-title fs-14 fw-bold" id="sagemodalLabel">
               Credit Advisor Research Assistant
             </h1>
             <button
@@ -205,71 +244,75 @@
             </div>
 
             <div class="signed-user d-none">
-              <div class="serach px-4">
-                <div class="d-flex align-items-center">
-                  <img src="Images/vuesax-outline-clock.png" alt="" />
-                  <span class="fs-12">Explore History</span>
-                </div>
-                <div class="d-flex align-items-center justify-content-between">
+              <div class="history-title d-flex align-items-center mx-2">
+                <img src="Images/vuesax-outline-clock.png" alt="" />
+                <span class="fs-12">Explore History</span>
+              </div>
+              <div
+                class="search w-100 d-flex align-items-center justify-content-between m-2">
+                <div class="input-search w-50">
                   <input
                     type="text"
-                    class="form-control w-50 mt-1"
-                    style="background-color: #9f55f2"
-                    placeholder="Search " />
-                  <div>
-                    <button
-                      class="btn btn-light border rounded-3 border-1 mx-2">
-                      2days
-                    </button>
-                    <button class="btn btn-light border border-1 mx-1">
-                      2days
-                    </button>
-                    <button
-                      class="btn btn-light border border-1 rounded-3 mx-1">
-                      2days
-                    </button>
-                    <button
-                      class="btn btn-light border border-1 rounded-3 mx-1">
-                      2days
-                    </button>
-                    <button
-                      class="btn btn-light border border-1 rounded-3 mx-1">
-                      2days
-                    </button>
-                  </div>
+                    class="form-control"
+                    placeholder="Search"
+                    style="background-color: #9e51b1" />
+                </div>
+                <div class="history w-50">
+                  <ul class="mb-0">
+                    <li
+                      class="btn btn-light border border-2 rounded-5 px-2 fs-14">
+                      Today
+                    </li>
+                    <li
+                      class="btn btn-light border border-2 rounded-5 px-2 fs-14">
+                      2 Days
+                    </li>
+                    <li
+                      class="btn btn-light border border-2 rounded-5 px-2 fs-14">
+                      4 DAys
+                    </li>
+                    <li
+                      class="btn btn-light border border-2 rounded-5 px-2 fs-14">
+                      2 Weeks
+                    </li>
+                    <li
+                      class="btn btn-light border border-2 rounded-5 px-2 fs-14">
+                      1 Month
+                    </li>
+                    <li
+                      class="btn btn-light border border-2 rounded-5 px-2 fs-14">
+                      2 Month
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="mb-3">
-                <div class="d-flex align-items-center justify-content-around">
-                  <div
-                    class="question d-flex align-items-center justify-content-between">
-                    <p class="me-2 fs-12">
-                      How much should I sepnd for grocery?
-                    </p>
-                    <img
-                      src="Images/arrow-right-10.png"
-                      style="width: 11px; height: 10px"
-                      alt="" />
-                  </div>
-                  <div
-                    class="question d-flex align-items-center justify-content-between">
-                    <p class="me-2 fs-12">Should I buy Mercedes for 100000$</p>
-                    <img
-                      src="Images/arrow-right-10.png"
-                      style="width: 11px; height: 10px"
-                      alt="" />
-                  </div>
-                  <div
-                    class="question d-flex align-items-center justify-content-between">
-                    <p class="me-2 fs-12">
-                      What's your approach to using React hooks vs. class
-                      components?
-                    </p>
-                    <img
-                      src="Images/arrow-right-10.png"
-                      style="width: 11px; height: 10px"
-                      alt="" />
-                  </div>
+              <div class="last-questions d-flex my-3 w-100">
+                <div
+                  class="question d-flex align-items-center justify-content-between">
+                  <p class="me-2 fs-12">How much should I sepnd for grocery?</p>
+                  <img
+                    src="Images/arrow-right-10.png"
+                    style="width: 11px; height: 10px"
+                    alt="" />
+                </div>
+                <div
+                  class="question d-flex align-items-center justify-content-between">
+                  <p class="me-2 fs-12">Should I buy Mercedes for 100000$</p>
+                  <img
+                    src="Images/arrow-right-10.png"
+                    style="width: 11px; height: 10px"
+                    alt="" />
+                </div>
+                <div
+                  class="question d-flex align-items-center justify-content-between">
+                  <p class="me-2 fs-12">
+                    What's your approach to using React hooks vs. class
+                    components?
+                  </p>
+                  <img
+                    src="Images/arrow-right-10.png"
+                    style="width: 11px; height: 10px"
+                    alt="" />
                 </div>
               </div>
             </div>
@@ -369,19 +412,19 @@
         </div>
       </div>
     </div>
-    <!-- End Sage Model -->
+    <!-- End Sage modal -->
 
-    <!-- Start Contact Model -->
+    <!-- Start Contact modal -->
     <div
-      class="modal fade contact-model"
-      id="contactModel"
+      class="modal fade contact-modal"
+      id="contactmodal"
       tabindex="-1"
-      aria-labelledby="contactModelLabel"
+      aria-labelledby="contactmodalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-17 fw-bold" id="contactModelLabel">
+            <h1 class="modal-title fs-17 fw-bold" id="contactmodalLabel">
               Contact Us
             </h1>
             <button
@@ -456,9 +499,37 @@
         </div>
       </div>
     </div>
-    <!-- End Contact Model -->
+    <!-- End Contact modal -->
 
-    <!--End Models  -->
+    <!-- Start Sign Out Modal -->
+    <div class="modal fade" id="signOutModal" tabindex="-1">
+      <div
+        class="modal-dialog modal-dialog-centered"
+        style="width: 500px; height: 394px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-14 fw-bold">Sign Out</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              onclick="handelSignOut()"></button>
+          </div>
+          <div class="modal-body text-center" style="background-color: #f8f8f8">
+            <img src="Images/Mask Group 604.png" style="width: 260px" alt="" />
+            <p>
+              Thank you for using our service! We hope your experience was
+              enjoyable and productive. Remember, we're always here to assist
+              you. Have a wonderful day!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Sign Out Modal -->
+
+    <!--End modals  -->
 
     <!-- Start Features Section-->
     <section
@@ -938,10 +1009,10 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <script src="bootstrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="bootstrap/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="bootstrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="wisepay.js"></script>
   </body>
 </html>

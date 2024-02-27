@@ -121,8 +121,8 @@ p {
 }
 /* End navbar */
 
-/* Start Sage Model */
-.sage-model .modal-body {
+/* Start Sage modal */
+.sage-modal .modal-body {
   background: #f8f8f8 0% 0% no-repeat padding-box;
   background-image: url(../Images/smarta_en_bg.png);
 }
@@ -149,14 +149,14 @@ p {
   border-radius: 9px;
 }
 
-.smarta-model {
+.smarta-modal {
   right: 7rem;
   bottom: 2rem;
   position: fixed;
   cursor: pointer;
   z-index: 200;
 }
-.smarta-model span {
+.smarta-modal span {
   color: var(--unnamed-color-6638fb);
   font-size: 14px;
 }
@@ -188,7 +188,11 @@ p {
   background-color: #efe4f2;
   border-radius: 9px;
 }
-/* End Sage Model */
+
+.input-search input::placeholder {
+  color: var(--unnamed-color-ffffff);
+}
+/* End Sage modal */
 
 /* Start Main Section */
 .hero-img {
@@ -445,17 +449,12 @@ p {
   border-radius: 10px;
   background-color: var(--unnamed-color-9f55f2);
 }
-.explore a {
-  font-weight: bold;
-  font-size: 14px;
-  color: #a156f7;
-}
 /* End Blogs Section */
 /* Start Contact Section */
-.contact-model .modal-body {
+.contact-modal .modal-body {
   background: #f4f4f2 0% 0% no-repeat padding-box;
 }
-.contact-model .contact-img img {
+.contact-modal .contact-img img {
   width: 100%;
   height: 100%;
 }
@@ -607,6 +606,16 @@ p {
 }
 
 @media (max-width: 768px) {
+  .navbar-ul {
+    align-items: start;
+    flex-direction: column;
+    margin-top: 14px;
+    padding: 15px;
+    background: url(../Images/hero2.png) no-repeat;
+    background-size: cover;
+    /* background-color: rgba(30, 23, 93, 0.5); */
+  }
+
   .navbar .navbar-brand {
     width: 55px;
     height: 50px;
@@ -646,24 +655,14 @@ p {
 }
 
 @media (max-width: 600px) {
-  .navbar {
-    height: 100%;
+  .navbar-ul {
+    align-items: center;
   }
   .blogs-section .heading-bar {
     flex-direction: column;
   }
   .blogs-section .search {
     margin-top: 10px;
-  }
-  .blogs-nav {
-    justify-content: center;
-  }
-  .blogs-nav .navbar-nav {
-    margin-right: auto;
-    padding: 10px 0;
-  }
-  .blogs-nav .sign-btn {
-    display: none;
   }
   .main-title {
     font-size: 30px;
