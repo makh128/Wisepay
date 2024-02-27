@@ -64,7 +64,10 @@ p {
 .fs-12 {
   font-size: 12px;
 }
-
+.input-group,
+.main-blog {
+  z-index: -1;
+}
 .input-group .form-select:focus {
   border-color: #9f55f2;
   box-shadow: 0 0 0 0.25rem rgba(159, 85, 242, 0.25);
@@ -622,6 +625,7 @@ p {
     font-size: 20px;
   }
   .navbar-ul {
+    z-index: 200;
     align-items: start;
     flex-direction: column;
     margin-top: 14px;
@@ -684,6 +688,9 @@ p {
 }
 
 @media (max-width: 600px) {
+  .navbar-ul {
+    align-items: center;
+  }
   #herosCarousel .carousel-control-next-icon,
   #herosCarousel .carousel-control-prev-icon {
     display: none;
@@ -748,6 +755,12 @@ p {
   .power-image {
     height: 200px;
     margin-bottom: 20px;
+  }
+  .blogs-section .search {
+    flex-direction: column;
+  }
+  .blogs-section .search input {
+    margin: 10px;
   }
 }
 
