@@ -384,18 +384,17 @@ p {
 .install .mobile {
   margin-right: 3rem;
 }
-.install .text {
-  width: 500px;
-}
+
 .install .text h1 {
   font-size: 60px;
   color: #eab5f9;
 }
 .install .text .links a img {
-  width: 190px;
-  height: 62px;
+  width: 175px;
+  height: 55px;
 }
 .install .text p {
+  margin-bottom: 25px;
   font-size: 19px;
   color: var(--unnamed-color-ffffff);
 }
@@ -557,6 +556,10 @@ p {
 }
 
 @media (max-width: 992px) {
+  .caption-img img {
+    width: 220px;
+    margin: 0 20px;
+  }
   .carousel-caption h5 {
     font-size: 30px;
   }
@@ -582,25 +585,23 @@ p {
     font-size: 12px;
   }
 
-  .install .text {
-    width: 350px;
+  .install .mobile {
+    margin-right: 0;
+  }
+  .install .mobile img {
+    width: 230px;
   }
   .install .text h1 {
     font-size: 40px;
   }
   .install .text p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .install .text h6 {
     font-size: 20px;
   }
-  .install .links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .install .links img {
-    width: 150px;
+  .install .text .links a img {
+    width: 148px;
     height: 50px;
   }
 }
@@ -620,28 +621,24 @@ p {
     width: 55px;
     height: 50px;
   }
+  .carousel-caption h5 {
+    font-size: 25px;
+  }
+  .carousel-caption p {
+    font-size: 12px;
+  }
+  .caption-img img {
+    width: 200px;
+    margin: 0 20px;
+  }
+  .smarta-modal {
+    right: 3rem;
+    bottom: 2rem;
+  }
   .power .list .effect::before {
     height: 175px;
   }
-  .install .mobile {
-    margin-right: 0;
-  }
-  .install .mobile img {
-    width: 220px;
-  }
-  .install .text h1 {
-    font-size: 40px;
-  }
-  .install .text p {
-    font-size: 14px;
-  }
-  .install .text h6 {
-    font-size: 20px;
-  }
-  .install .text .links a img {
-    width: 148px;
-    height: 50px;
-  }
+
   .sage-inputs .inputs {
     flex-direction: column;
   }
@@ -652,20 +649,74 @@ p {
   .sage-inputs .inputs .location {
     width: 100%;
   }
+  .install .mobile {
+    margin-right: 0;
+  }
+  .install .mobile img {
+    width: 190px;
+  }
+  .install .text h1 {
+    font-size: 35px;
+  }
+  .install .text h6 {
+    font-size: 15px;
+  }
+  .install .text p {
+    font-size: 12px;
+  }
+
+  .install .text .links {
+    display: flex;
+    align-items: center;
+  }
+  .install .text .links a img {
+    width: 120px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 600px) {
-  .navbar-ul {
+  .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .caption-img img {
+    display: none;
+  }
+  .smarta-modal {
+    right: 2rem;
+    bottom: 2rem;
+  }
+  .install .container {
+    display: flex;
     align-items: center;
-  }
-  .blogs-section .heading-bar {
+    justify-content: center;
     flex-direction: column;
+    text-align: center;
   }
-  .blogs-section .search {
-    margin-top: 10px;
+
+  .install .mobile img {
+    width: 170px;
   }
-  .main-title {
-    font-size: 30px;
+  .install .text h1 {
+    font-size: 35px;
+  }
+  .install .text h6 {
+    font-size: 18px;
+  }
+  .install .text p {
+    font-size: 12px;
+  }
+
+  .install .text .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .install .text .links a img {
+    width: 120px;
+    height: 40px;
   }
 }
 
