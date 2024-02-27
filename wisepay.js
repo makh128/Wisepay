@@ -82,35 +82,51 @@ for (let i = 0; i < accordion.length; i++) {
 
 // Sage Chat Section
 
-const sageInput = document.querySelector(".sage-input");
-const sageSendBtn = document.querySelector(".sage-send");
-const sageNewTopic = document.querySelector(".sage-new-btn");
-const sageDiv = document.querySelector(".sage");
-console.log(sageDiv);
+const logPeople = [
+  {
+    userName: "mahmoud.mk507@gmail.com",
+    password: "mody",
+  },
+  {
+    userName: "ahmed.mk507@gmail.com",
+    password: "mody",
+  },
+];
 
-sageSendBtn.addEventListener("click", function () {
-  if (sageInput.value != "") {
-    console.log("sended");
-  } else {
-    console.log("not sended , input is empty");
+function getInfo() {
+  const signEmail = document.querySelector(".sign-email").value;
+  const signPassword = document.querySelector(".sign-password").value;
+
+  for (let i = 0; i < logPeople.length; i++) {
+    if (
+      signEmail === logPeople[i].userName &&
+      signPassword === logPeople[i].password
+    ) {
+      localStorage.setItem("isLoggedIn", true); // Store login status
+      window.location.href = "index.html"; // Redirect to index.html
+      return;
+    }
+  }
+  console.log("Invalid email or password");
+  localStorage.setItem("isLoggedIn", false); // Store login status
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+  const sageDiv = document.querySelector(".sage");
+  const sageInputs = document.querySelector(".sage-inputs");
+  const userName = document.querySelector(".welcome-name");
+  const userWelcome = document.querySelector(".user-welcome");
+  const userSigned = document.querySelector(".signed-user");
+  const signBtn = document.querySelector(".sign-btn");
+
+  if (isLoggedIn) {
+    signBtn.style.display = "none";
+    sageDiv.classList.add("signed");
+    userWelcome.classList.add("user-name");
+    userName.textContent = `Hello , ${logPeople[0].userName}`;
+    sageInputs.style.display = "none";
+    userSigned.style.display = "block";
+    userSigned.classList.remove("d-none");
   }
 });
-
-sageNewTopic.addEventListener("click", handelNewTopic);
-
-function handelNewTopic() {
-  if (sageInput) {
-    sageInput.value = "";
-  }
-}
-
-const user = "Mahmoud";
-const userSignUp = true;
-
-if (userSignUp) {
-  sageDiv.classList.add("signed");
-  const userWelcome = sageDiv.querySelector(".user-welcome");
-  userWelcome.classList.add("user-name");
-  const userName = document.querySelector(".welcome-name");
-  userName.textContent = `Hello , ${user}`;
-}

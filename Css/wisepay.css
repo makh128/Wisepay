@@ -182,6 +182,7 @@ p {
   align-items: start;
   flex-direction: column;
   width: 476px;
+  margin-left: 10px;
   height: 70px;
   padding: 15px;
   background-color: #efe4f2;
