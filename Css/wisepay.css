@@ -196,9 +196,7 @@ p {
 
 /* Start Main Section */
 .hero-img {
-  width: 100%;
   height: 100vh;
-  opacity: 1;
 }
 #herosCarousel .carousel-control-next-icon {
   background-image: url(../Images/forward.png);
@@ -211,28 +209,35 @@ p {
   height: 40px;
 }
 
-.first-slide .carousel-caption {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-}
-
-.carousel-caption h5 {
-  font-size: 50px;
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.55px;
-}
-
 .carousel-indicators button.active {
   width: 50px;
   background-color: var(--unnamed-color-9f55f2);
+}
+
+.caption-img img {
+  width: 260px;
+}
+
+.qr-code::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--unnamed-color-ffffff);
+  transform: translateX(-50%);
+  animation: moveUpDown 0.2s ease-in-out infinite alternate;
+}
+@keyframes moveUpDown {
+  0% {
+    top: -18px; /* Initial position of the triangle */
+  }
+  100% {
+    top: -15px; /* Final position of the triangle */
+  }
 }
 /* End Main Section */
 
@@ -556,16 +561,6 @@ p {
 }
 
 @media (max-width: 992px) {
-  .caption-img img {
-    width: 220px;
-    margin: 0 20px;
-  }
-  .carousel-caption h5 {
-    font-size: 30px;
-  }
-  .carousel-caption p {
-    font-size: 15px;
-  }
   .features .card .card-text {
     font-size: 13px;
   }
@@ -621,16 +616,6 @@ p {
     width: 55px;
     height: 50px;
   }
-  .carousel-caption h5 {
-    font-size: 25px;
-  }
-  .carousel-caption p {
-    font-size: 12px;
-  }
-  .caption-img img {
-    width: 200px;
-    margin: 0 20px;
-  }
   .smarta-modal {
     right: 3rem;
     bottom: 2rem;
@@ -676,14 +661,6 @@ p {
 }
 
 @media (max-width: 600px) {
-  .carousel-caption {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .caption-img img {
-    display: none;
-  }
   .smarta-modal {
     right: 2rem;
     bottom: 2rem;
