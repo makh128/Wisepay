@@ -615,6 +615,9 @@ p {
     width: 148px;
     height: 50px;
   }
+
+  /* login page */
+
 }
 
 @media (max-width: 768px) {
@@ -676,7 +679,6 @@ p {
   .install .text p {
     font-size: 12px;
   }
-
   .install .text .links {
     display: flex;
     align-items: center;
