@@ -111,6 +111,9 @@ p {
   font: var(--unnamed-font-family-tahoma) var(--unnamed-font-style-normal)
     var(--unnamed-font-weight-normal);
 }
+.sign-container {
+  width: 50%;
+}
 .nav-item:hover a,
 .sign-container:hover .sign-btn {
   color: var(--unnamed-color-9f55f2);
@@ -617,10 +620,25 @@ p {
   }
 
   /* login page */
-
 }
 
 @media (max-width: 768px) {
+  .sign-in,
+  .register,
+  .change-pass {
+    position: relative; /* Ensure relative positioning for absolute overlay */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sign-container {
+    width: 80%;
+  }
+  .img-container {
+    display: none;
+  }
   .caption-img img {
     width: 200px;
   }
@@ -764,7 +782,18 @@ p {
   .blogs-section .search input {
     margin: 10px;
   }
+  /* Sign page responsive */
+  .sign-container {
+    width: 100%;
+  }
+  .sign-container h1 {
+    text-align: center;
+  }
+  #passwordHelpBlock {
+    font-size: 10px;
+  }
 }
+
 
 /* Start Privacy Page */
 .privacy {
