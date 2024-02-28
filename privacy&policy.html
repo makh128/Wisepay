@@ -43,7 +43,7 @@
               class="nav-link"
               href="#"
               data-bs-toggle="modal"
-              data-bs-target="#contactmodal"
+              data-bs-target="#contactModal"
               >Contact us</a
             >
           </li>
@@ -51,17 +51,17 @@
       </div>
     </nav>
     <!-- End Header -->
-        <!-- Start Contact modal -->
+    <!-- Start Contact modal -->
     <div
       class="modal fade contact-modal"
-      id="contactmodal"
+      id="contactModal"
       tabindex="-1"
-      aria-labelledby="contactmodalLabel"
+      aria-labelledby="contactModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-17 fw-bold" id="contactmodalLabel">
+            <h1 class="modal-title fs-17 fw-bold" id="contactModalLabel">
               Contact Us
             </h1>
             <button
@@ -74,8 +74,9 @@
             <div class="container">
               <div class="row">
                 <div
-                  class="col-6 d-flex align-items-center justify-content-center flex-column">
-                  <div class="contact-heading">
+                  class="col-6 d-flex align-items-center justify-content-center flex-column"
+                  id="contact-heading">
+                  <div>
                     <h1 class="main-title">Contact Us</h1>
                     <p class="fs-14">
                       Do you have any questios? Please do not hesitate to
@@ -87,7 +88,7 @@
                     <img src="Images/contactus.png" alt="" />
                   </div>
                 </div>
-                <div class="col-6 px-4">
+                <div class="col-6 px-4" id="contact-form">
                   <form>
                     <div class="mb-3">
                       <label for="formName" class="form-label">Name</label>
