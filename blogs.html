@@ -33,7 +33,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto navbar-ul">
           <li class="nav-item px-2">
-            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="index.html#features">Features</a>
           </li>
           <li class="nav-item px-2">
             <a class="nav-link" href="blogs.html">Blogs</a>
@@ -43,7 +43,7 @@
               class="nav-link"
               href="#"
               data-bs-toggle="modal"
-              data-bs-target="#contactmodal"
+              data-bs-target="#contactModal"
               >Contact us</a
             >
           </li>
@@ -51,8 +51,95 @@
       </div>
     </nav>
     <!-- End Header -->
+    <!-- Start Contact modal -->
+    <div
+      class="modal fade contact-modal"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactmodalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-17 fw-bold" id="contactmodalLabel">
+              Contact Us
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-6 d-flex align-items-center justify-content-center flex-column">
+                  <div class="contact-heading">
+                    <h1 class="main-title">Contact Us</h1>
+                    <p class="fs-14">
+                      Do you have any questios? Please do not hesitate to
+                      contact us directly. Our team will come back to you within
+                      a matter of hours to help you.
+                    </p>
+                  </div>
+                  <div class="contact-img">
+                    <img src="Images/contactus.png" alt="" />
+                  </div>
+                </div>
+                <div class="col-6 px-4">
+                  <form>
+                    <div class="mb-3">
+                      <label for="formName" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="formName"
+                        required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="formEmail" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="formEmail"
+                        required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="formSubject" class="form-label"
+                        >Subject</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="formSubject" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="formMessage" class="form-label"
+                        >Message</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="formMessage"
+                        rows="5"
+                        style="resize: none"
+                        required></textarea>
+                    </div>
+                    <button type="submit" class="fw-bold w-100 sub-btn">
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact modal -->
+
     <!-- Start Blogs Section  -->
-    <div class="blogs-section">
+    <section class="blogs-section">
       <div class="container p-4">
         <h2 class="main-title">Explore All Posts</h2>
         <div
@@ -373,7 +460,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- End Blogs Section  -->
     <!-- Start Footer -->
     <footer class="footer">
