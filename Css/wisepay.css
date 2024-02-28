@@ -64,7 +64,15 @@ p {
 .fs-12 {
   font-size: 12px;
 }
-
+.bg-white {
+  background-color: var(--unnamed-color-ffffff);
+}
+.main-color-hover {
+  color: #003456;
+}
+.main-color-hover:hover {
+  color: var(--unnamed-color-9f55f2);
+}
 .input-group .form-select:focus {
   border-color: #9f55f2;
   box-shadow: 0 0 0 0.25rem rgba(159, 85, 242, 0.25);
@@ -143,8 +151,10 @@ p {
 /* Start Sage modal */
 .sage-modal .modal-body {
   background: #f8f8f8 0% 0% no-repeat padding-box;
-  background-image: url(../Images/smarta_en_bg.png);
+  background: url(../Images/smarta_en_bg.png) no-repeat;
+  background-size: cover;
 }
+
 .sage-inputs,
 .questions {
   background: #fcfcfc 0% 0% no-repeat padding-box;
@@ -161,8 +171,7 @@ p {
 }
 .question {
   cursor: pointer;
-  padding: 15px;
-  margin: 10px;
+  padding: 10px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 2px 2px 8px #0000000d;
   border-radius: 9px;
@@ -801,7 +810,7 @@ p {
     font-size: 14px;
   }
   .main-title {
-    font-size: 20px;
+    font-size: 25px;
   }
   /* Main Page */
   .navbar-ul {

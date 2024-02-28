@@ -130,19 +130,22 @@ function getInfo() {
   localStorage.setItem("isLoggedIn", false); // Store login status
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
-  const sageDiv = document.querySelector(".sage");
-  const sageInputs = document.querySelector(".sage-inputs");
-  const welcomeName = document.querySelector(".welcome-name");
-  const userWelcome = document.querySelector(".user-welcome");
-  const userSigned = document.querySelector(".signed-user");
-  const signBtn = document.querySelector(".sign-btn");
-  const userInfo = document.querySelector(".user-info");
-  const welName = document.querySelector(".wel-name");
-  const userNick = document.querySelector(".user-nick");
-  const userEmail = document.querySelector(".user-email");
+// Constants
 
+const isLoggedIn = localStorage.getItem("isLoggedIn");
+const sageDiv = document.querySelector(".sage");
+const sageInputs = document.querySelector(".sage-inputs");
+const welcomeName = document.querySelector(".welcome-name");
+const userWelcome = document.querySelector(".user-welcome");
+const userSigned = document.querySelector(".signed-user");
+const signBtn = document.querySelector(".sign-btn");
+const userInfo = document.querySelector(".user-info");
+const welName = document.querySelector(".wel-name");
+const userNick = document.querySelector(".user-nick");
+const userEmail = document.querySelector(".user-email");
+const userQuestions = document.querySelector(".questions");
+
+document.addEventListener("DOMContentLoaded", function () {
   if (isLoggedIn) {
     signBtn.style.display = "none";
     sageDiv.classList.add("signed");
@@ -161,4 +164,52 @@ document.addEventListener("DOMContentLoaded", function () {
 function handelSignOut() {
   localStorage.removeItem("isLoggedIn");
   location.reload();
+}
+
+// Handel Sage Co-Pilot
+const userInput = document.getElementById("sage-user-input");
+const userSend = document.getElementById("sage-user-send");
+const sageBody = document.querySelector("#sageModal .modal-body #messages");
+
+let userMessages = [];
+
+function handelUserMsg() {
+  if (userInput.value.trim() !== "") {
+    sageDiv.classList.add("d-none");
+    userSigned.classList.add("d-none");
+    userQuestions.classList.add("d-none");
+    userMessages.push(userInput.value);
+    console.log(sageBody);
+    userInput.value = "";
+    let msg = "";
+    for (let i = 0; i < userMessages.length; i++) {
+      msg = `
+    <div class="user-message position-relative my-4">
+              <div class="user-image d-flex align-items-center">
+                <img src="Images/user.png" style="width: 40px" alt="" />
+                <span class="fw-bold mx-2" id="userName">You</span>
+              </div>
+              <div class="user-question w-50">
+                <p class="ms-5">
+                  ${userMessages[i]}
+                </p>
+              </div>
+            </div>
+    `;
+    }
+    let tempElement = document.createElement("div");
+    tempElement.innerHTML = msg;
+    sageBody.appendChild(tempElement);
+  }
+}
+
+// new topic btn
+
+function handelNewTopic() {
+  // Remove the "d-none" class from the necessary elements
+  sageDiv.classList.remove("d-none");
+  userSigned.classList.remove("d-none");
+  userQuestions.classList.remove("d-none");
+  sageBody.innerHTML = "";
+  // Clear the chat messages
 }
