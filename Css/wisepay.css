@@ -119,11 +119,25 @@ p {
   color: var(--unnamed-color-9f55f2);
   border-color: var(--unnamed-color-9f55f2);
 }
+
 .sign-btn {
   border: 1px solid var(--unnamed-color-ffffff);
   border-radius: 100px;
   color: var(--unnamed-color-ffffff);
   font: var(--unnamed-font-family-tahoma);
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+.navbar-toggler:focus {
+  filter: drop-shadow(0px 0px 3px #9e55f2b0);
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../Images/icons8-menu-128.png);
+  background-size: 40px;
 }
 /* End navbar */
 
@@ -256,17 +270,18 @@ p {
   background-color: #df5df2;
 }
 
-.ticker .ticker-line {
-  animation: ticker 25s infinite linear;
+/* .ticker .ticker-line {
+  animation: ticker 25s linear infinite;
 }
 @keyframes ticker {
-  from {
+  0% {
     transform: translateX(100%);
   }
-  to {
-    transform: translateX(-1279px);
+  100% {
+    transform: translateX(-100%);
   }
-}
+} */
+
 /* End ticker Section*/
 
 /* Start Features */
@@ -624,6 +639,9 @@ p {
 }
 
 @media (max-width: 768px) {
+  .main-title {
+    font-size: 30px;
+  }
   .sign-in,
   .register,
   .change-pass {
@@ -709,6 +727,12 @@ p {
 }
 
 @media (max-width: 600px) {
+  .fs-17 {
+    font-size: 14px;
+  }
+  .main-title {
+    font-size: 20px;
+  }
   .navbar-ul {
     align-items: center;
   }
@@ -794,7 +818,6 @@ p {
     font-size: 10px;
   }
 }
-
 
 /* Start Privacy Page */
 .privacy {
