@@ -14,8 +14,8 @@
   </head>
   <body>
     <!-- Start Header -->
-    <nav class="navbar navbar-expand-md px-5 flex-wrap navbar-transparent">
-      <div class="d-flex align-items-center justify-content-center">
+    <nav class="navbar navbar-expand-md flex-wrap navbar-transparent">
+      <div class="d-flex align-items-center justify-content-center ps-4">
         <a href="index.html">
           <img src="Images/logo ca.png" class="navbar-brand mx-4" alt="#" />
         </a>
@@ -63,7 +63,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse z-3" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto navbar-ul">
+        <ul class="navbar-nav ms-auto navbar-ul px-4">
           <li class="nav-item px-2">
             <a class="nav-link" href="#features">Features</a>
           </li>
@@ -90,9 +90,9 @@
     <!-- Start Main Section -->
     <div class="main-page position-relative">
       <div
-        class="d-flex flex-column align-items-center justify-content-center smarta-modal"
+        class="d-flex flex-column align-items-center justify-content-center sage-modal-box"
         data-bs-toggle="modal"
-        data-bs-target="#sagemodal">
+        data-bs-target="#sageModal">
         <img src="Images/smarta.png" alt="" />
         <span>Ask</span>
         <span class="fw-bold">Sage</span>
@@ -224,14 +224,14 @@
     <!-- Start Sage modal -->
     <div
       class="modal fade sage-modal"
-      id="sagemodal"
+      id="sageModal"
       tabindex="-1"
-      aria-labelledby="sagemodalLabel"
+      aria-labelledby="sageModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-14 fw-bold" id="sagemodalLabel">
+            <h1 class="modal-title fs-14 fw-bold" id="sageModalLabel">
               Credit Advisor Research Assistant
             </h1>
             <button
@@ -404,7 +404,7 @@
               <div class="input-group">
                 <input
                   type="text"
-                  class="form-control sage-input"
+                  class="form-control pe-5 sage-input"
                   style="border-radius: 9px"
                   placeholder="Type a Question" />
                 <div class="input-group-append c-pointer sage-send">
@@ -1045,8 +1045,8 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <script src="bootstrap/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
     <script src="bootstrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="wisepay.js"></script>

@@ -64,10 +64,7 @@ p {
 .fs-12 {
   font-size: 12px;
 }
-.blogs .input-group,
-.main-blog {
-  z-index: -1;
-}
+
 .input-group .form-select:focus {
   border-color: #9f55f2;
   box-shadow: 0 0 0 0.25rem rgba(159, 85, 242, 0.25);
@@ -105,7 +102,9 @@ p {
   width: 73px;
   height: 60px;
 }
-
+.navbar-collapse {
+  z-index: 100;
+}
 .nav-item a {
   color: var(--unnamed-color-ffffff);
   font: var(--unnamed-font-family-tahoma) var(--unnamed-font-style-normal)
@@ -169,16 +168,19 @@ p {
   border-radius: 9px;
 }
 
-.smarta-modal {
+.sage-modal-box {
   right: 7rem;
   bottom: 2rem;
   position: fixed;
   cursor: pointer;
   z-index: 200;
 }
-.smarta-modal span {
+.sage-modal-box span {
   color: var(--unnamed-color-6638fb);
   font-size: 14px;
+}
+.sage-input {
+  padding-right: 20px;
 }
 .modal-dialog {
   max-width: 80%;
@@ -751,7 +753,7 @@ p {
     width: 55px;
     height: 50px;
   }
-  .smarta-modal {
+  .sage-modal-box {
     right: 3rem;
     bottom: 2rem;
   }
@@ -825,7 +827,7 @@ p {
   .caption-text p {
     text-align: center;
   }
-  .smarta-modal {
+  .sage-modal-box {
     right: 2rem;
     bottom: 2rem;
   }
