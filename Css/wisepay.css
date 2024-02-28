@@ -255,7 +255,8 @@ p {
   height: 120px;
   background-color: #df5df2;
 }
-/* .ticker .ticker-line {
+
+.ticker .ticker-line {
   animation: ticker 25s infinite linear;
 }
 @keyframes ticker {
@@ -265,7 +266,7 @@ p {
   to {
     transform: translateX(-1279px);
   }
-} */
+}
 /* End ticker Section*/
 
 /* Start Features */
