@@ -91,6 +91,7 @@ const logPeople = [
 ];
 
 function getInfo() {
+  console.log("clicked");
   const signEmail = document.querySelector(".sign-email").value;
   const signPassword = document.querySelector(".sign-password").value;
   let isEmailCorrect = false;
@@ -185,7 +186,7 @@ function handelUserMsg() {
                 <img src="Images/user.png" style="width: 40px" alt="" />
                 <span class="fw-bold mx-2" id="userName">You</span>
               </div>
-              <div class="user-question w-50">
+              <div class="user-question ">
                 <p class="ms-5">
                   ${userMessages[i]}
                 </p>
@@ -218,7 +219,7 @@ function handelSageRep() {
                 <img src="Images/smarta.png" style="width: 40px" alt="" />
                 <span class="fw-bold mx-2 main-color">Sage</span>
               </div>
-              <div class="sage-answer w-50">
+              <div class="sage-answer">
                 <p class="ms-5">
                   It seems like you've typed a random string of characters. Is
                   there anything specific you'd like to discuss or ask about?

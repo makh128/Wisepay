@@ -148,12 +148,12 @@ p {
 /* End navbar */
 
 /* Start Sage modal */
-.sage-modal .modal-dialog {
+.modal .modal-dialog {
   max-width: 80%;
 }
 
 .sage-modal .modal-body {
-  padding: 15px; /* Add padding to the modal body */
+  padding: 15px;
   background: #f8f8f8 0% 0% no-repeat padding-box;
   background: url(../Images/smarta_en_bg.png) no-repeat;
   background-size: cover;
@@ -227,6 +227,10 @@ p {
 }
 .input-search input::placeholder {
   color: var(--unnamed-color-ffffff);
+}
+.user-message,
+.sage-res {
+  width: 70%;
 }
 .custom-loader {
   position: fixed;
@@ -673,6 +677,10 @@ p {
 }
 
 @media (max-width: 992px) {
+  .user-message,
+  .sage-res {
+    width: 80%;
+  }
   /* Main Page */
   .caption-img img {
     width: 220px;
@@ -849,6 +857,11 @@ p {
   }
   .questions div {
     flex-direction: column;
+  }
+
+  .user-message,
+  .sage-res {
+    width: 95%;
   }
 }
 
