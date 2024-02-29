@@ -64,9 +64,7 @@ p {
 .fs-12 {
   font-size: 12px;
 }
-.bg-white {
-  background-color: var(--unnamed-color-ffffff);
-}
+
 .main-color-hover {
   color: #003456;
 }
@@ -100,11 +98,6 @@ p {
   background: rgba(30, 23, 93, 0.4);
   position: absolute;
   z-index: 2;
-}
-.blogs-nav {
-  background: transparent
-    linear-gradient(90deg, #1e175d 0%, #080719 39%, #1c1657 100%) 0% 0%
-    no-repeat padding-box;
 }
 .navbar-brand {
   width: 73px;
@@ -146,37 +139,28 @@ p {
   background-image: url(../Images/icons8-menu-128.png);
   background-size: 40px;
 }
+.blogs-nav {
+  background: transparent
+    linear-gradient(90deg, #1e175d 0%, #080719 39%, #1c1657 100%) 0% 0%
+    no-repeat padding-box;
+}
+
 /* End navbar */
 
 /* Start Sage modal */
+.sage-modal .modal-dialog {
+  max-width: 80%;
+  max-height: 350px; /* Set the maximum height of the modal */
+}
+
 .sage-modal .modal-body {
+  padding: 15px; /* Add padding to the modal body */
   background: #f8f8f8 0% 0% no-repeat padding-box;
   background: url(../Images/smarta_en_bg.png) no-repeat;
   background-size: cover;
+  overflow-x: hidden;
+  height: 400px;
 }
-
-.sage-inputs,
-.questions {
-  background: #fcfcfc 0% 0% no-repeat padding-box;
-  border: 0.10000000149011612px solid var(--unnamed-color-c1c1c1);
-  border-radius: 10px;
-}
-.sage-inputs .inputs .income,
-.sage-inputs .inputs .location {
-  width: 50%;
-}
-.sage-img {
-  width: 90px;
-  height: 90px;
-}
-.question {
-  cursor: pointer;
-  padding: 10px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 2px 2px 8px #0000000d;
-  border-radius: 9px;
-}
-
 .sage-modal-box {
   right: 7rem;
   bottom: 2rem;
@@ -188,22 +172,42 @@ p {
   color: var(--unnamed-color-6638fb);
   font-size: 14px;
 }
+.sage-img {
+  width: 90px;
+  height: 90px;
+}
 .sage-input {
   padding-right: 20px;
 }
 .input-search {
   width: 50%;
 }
-.modal-dialog {
-  max-width: 80%;
+.sage-inputs,
+.questions {
+  background: #fcfcfc 0% 0% no-repeat padding-box;
+  border: 0.10000000149011612px solid var(--unnamed-color-c1c1c1);
+  border-radius: 10px;
 }
+.sage-inputs .inputs .income,
+.sage-inputs .inputs .location {
+  width: 50%;
+}
+
+.question {
+  cursor: pointer;
+  padding: 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 2px 2px 8px #0000000d;
+  border-radius: 9px;
+}
+
 .input-group-append {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 9px;
-  z-index: 10; /* To ensure the icon stays above the input */
+  z-index: 2;
 }
 
 .signed {
@@ -222,11 +226,39 @@ p {
   background-color: #efe4f2;
   border-radius: 9px;
 }
-
 .input-search input::placeholder {
   color: var(--unnamed-color-ffffff);
 }
+.custom-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  --c: radial-gradient(farthest-side, #9f55f2 90%, #0000);
+  background: var(--c) 0 0, var(--c) 100% 0, var(--c) 100% 100%, var(--c) 0 100%;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  animation: d8 0.5s infinite;
+}
+
+@keyframes d8 {
+  100% {
+    background-position: 100% 0, 100% 100%, 0 100%, 0 0;
+  }
+}
 /* End Sage modal */
+
+/* Start Contact Modal */
+.contact-modal .modal-body {
+  background: #f4f4f2 0% 0% no-repeat padding-box;
+}
+.contact-modal .contact-img img {
+  width: 100%;
+  height: 100%;
+}
+/* End Contact Modal */
 
 /* Start Main Section */
 .hero-img {
@@ -284,7 +316,7 @@ p {
   background-color: #df5df2;
 }
 
-/* .ticker .ticker-line {
+.ticker .ticker-line {
   animation: ticker 25s linear infinite;
 }
 @keyframes ticker {
@@ -292,13 +324,13 @@ p {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-1180px);
   }
-} */
+}
 
 /* End ticker Section*/
 
-/* Start Features */
+/* Start Features Section*/
 .features {
   width: 100%;
   padding: 50px;
@@ -344,9 +376,9 @@ p {
   color: var(--unnamed-color-ffffff);
   font: normal normal normal 14px/17px Tahoma;
 }
-/* End Features */
+/* End Features Section*/
 
-/* Start Vision */
+/* Start Power Section*/
 .power {
   background: url(../Images/bg_vision.png) no-repeat;
   background-position: right top;
@@ -356,8 +388,7 @@ p {
 .power .main-title {
   margin-right: 5rem;
 }
-/* End Vision */
-/* Start Power section */
+
 .power .list li {
   font-size: 20px;
   font-weight: bold;
@@ -414,7 +445,8 @@ p {
   color: #ffffff;
 }
 
-/* End Power section */
+/* End Power Section*/
+
 /* Start Install Section */
 .install {
   width: 100%;
@@ -449,6 +481,7 @@ p {
 }
 
 /* End Install Section */
+
 /* Start Blogs Section */
 .blogs {
   padding-top: 100px;
@@ -494,15 +527,6 @@ p {
   background-color: var(--unnamed-color-9f55f2);
 }
 /* End Blogs Section */
-/* Start Contact Section */
-.contact-modal .modal-body {
-  background: #f4f4f2 0% 0% no-repeat padding-box;
-}
-.contact-modal .contact-img img {
-  width: 100%;
-  height: 100%;
-}
-/* End Contact Section */
 
 /* Start footer */
 .footer {
@@ -678,7 +702,6 @@ p {
   .power .main-title {
     margin-right: 2rem;
   }
-
   .install .mobile {
     margin-right: 0;
   }
@@ -740,6 +763,7 @@ p {
 }
 
 @media (max-width: 768px) {
+  /* Global rules responsive */
   .main-title {
     font-size: 30px;
   }
@@ -793,17 +817,6 @@ p {
   .power .list .effect::before {
     height: 175px;
   }
-
-  .sage-inputs .inputs {
-    flex-direction: column;
-  }
-  .questions div {
-    flex-direction: column;
-  }
-  .sage-inputs .inputs .income,
-  .sage-inputs .inputs .location {
-    width: 100%;
-  }
   .install .mobile {
     margin-right: 0;
   }
@@ -827,9 +840,21 @@ p {
     width: 120px;
     height: 40px;
   }
+  /* Sage Modal Responsive */
+  .sage-inputs .inputs {
+    flex-direction: column;
+  }
+  .sage-inputs .inputs .income,
+  .sage-inputs .inputs .location {
+    width: 100%;
+  }
+  .questions div {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 600px) {
+  /* Global rules responsive */
   .fs-17 {
     font-size: 14px;
   }
@@ -838,8 +863,6 @@ p {
   }
   .main-title {
     font-size: 25px;
-  }
-  .history ul li {
   }
   /* Main Page */
   .navbar-ul {
@@ -926,12 +949,14 @@ p {
   #passwordHelpBlock {
     font-size: 10px;
   }
+  /* All Modal Responsive */
+  .modal .modal-dialog {
+    max-width: 92%;
+  }
 }
 @media (max-width: 577px) {
   /* All Modal Responsive */
-  .modal {
-    margin-left: 40px;
-  }
+
   #contactModal .row #contact-form,
   #contactModal .row #contact-heading {
     width: 100%;

@@ -170,7 +170,7 @@ function handelSignOut() {
 const userInput = document.getElementById("sage-user-input");
 const userSend = document.getElementById("sage-user-send");
 const sageBody = document.querySelector("#sageModal .modal-body #messages");
-
+const spinner = document.querySelector(".custom-loader");
 let userMessages = [];
 
 function handelUserMsg() {
@@ -200,16 +200,38 @@ function handelUserMsg() {
     let tempElement = document.createElement("div");
     tempElement.innerHTML = msg;
     sageBody.appendChild(tempElement);
+    spinner.classList.remove("d-none");
   }
 }
 
 // new topic btn
 
 function handelNewTopic() {
-  // Remove the "d-none" class from the necessary elements
+  spinner.classList.add("d-none");
   sageDiv.classList.remove("d-none");
   userSigned.classList.remove("d-none");
   userQuestions.classList.remove("d-none");
   sageBody.innerHTML = "";
   // Clear the chat messages
+}
+
+function handelSageRep() {
+  let sageRep = `
+            <div class="sage-res position-relative my-4">
+              <div class="sage-image d-flex align-items-center">
+                <img src="Images/smarta.png" style="width: 40px" alt="" />
+                <span class="fw-bold mx-2 main-color">Sage</span>
+              </div>
+              <div class="sage-answer w-50">
+                <p class="ms-5">
+                  It seems like you've typed a random string of characters. Is
+                  there anything specific you'd like to discuss or ask about?
+                </p>
+              </div>
+            </div>
+  `;
+  spinner.classList.add("d-none");
+  let tempElement = document.createElement("div");
+  tempElement.innerHTML = sageRep;
+  sageBody.appendChild(tempElement);
 }

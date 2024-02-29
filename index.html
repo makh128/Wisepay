@@ -4,15 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WISEPAY</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5F627CD9");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Fonts -->
     <link
       rel="stylesheet"
       href="Fonts/Static font/Oswald-VariableFont_wght.ttf" />
     <link rel="stylesheet" href="Fonts/Static font/static/Oswald-Bold.ttf" />
+    <!-- bootstrap css file -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <!-- Global css file -->
     <link rel="stylesheet" href="./Css/wisepay.css" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5F627CD9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Start Header -->
     <nav class="navbar navbar-expand-md navbar-transparent">
       <div class="d-flex align-items-center justify-content-center ps-4">
@@ -131,7 +159,7 @@
               class="d-block w-100 hero-img"
               alt="..." />
             <div
-              class="container position-absolute start-50 translate-middle-x"
+              class="container position-absolute start-50 translate-middle-x ms-4"
               style="top: 40%">
               <div class="caption-text p-3 w-75">
                 <h1 class="text-light fw-bold">
@@ -150,7 +178,7 @@
               class="d-block w-100 hero-img"
               alt="..." />
             <div
-              class="container position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+              class="container ms-4 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
               <div class="caption-text text-start p-3">
                 <h1 class="text-light fw-bold">
                   SPEND SMARTER, SAVE MORE, LIVE LIMITLESSLY
@@ -171,7 +199,7 @@
               class="d-block w-100 hero-img"
               alt="..." />
             <div
-              class="container position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+              class="container ms-4 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
               <div class="caption-text text-start p-3">
                 <h1 class="text-light fw-bold">
                   SPEND SMARTER, SAVE MORE, LIVE LIMITLESSLY
@@ -243,19 +271,8 @@
           </div>
           <div class="modal-body">
             <div id="messages"></div>
-            <!-- <div class="sage-res position-relative my-4">
-              <div class="sage-image d-flex align-items-center">
-                <img src="Images/smarta.png" style="width: 40px" alt="" />
-                <span class="fw-bold mx-2 main-color">Sage</span>
-              </div>
-              <div class="sage-answer w-50">
-                <p class="ms-5">
-                  It seems like you've typed a random string of characters. Is
-                  there anything specific you'd like to discuss or ask about?
-                </p>
-              </div>
-            </div> -->
-
+            <div class="custom-loader d-none c-pointer" onclick="handelSageRep()"></div>
+           
             <div class="sage text-center">
               <div>
                 <img src="Images/smarta_big.png" class="sage-img" alt="" />
@@ -267,7 +284,6 @@
                 </p>
               </div>
             </div>
-
             <div class="signed-user d-none">
               <div class="history-title d-flex align-items-center mx-2">
                 <img src="Images/vuesax-outline-clock.png" alt="" />
@@ -421,6 +437,7 @@
                   placeholder="Type a Question" />
                 <div
                   class="input-group-append c-pointer"
+                  style="z-index: 20"
                   onclick="handelUserMsg()"
                   id="sage-user-send">
                   <img src="Images/Icon ionic-md-send.png" alt="" />
@@ -644,7 +661,7 @@
     </section>
     <!-- End Features Section -->
 
-    <!-- Start Vision Section-->
+    <!-- Start Vision Section Canceled-->
     <!-- <section class="vision" id="vision">
       <h1 class="vision-title py-5">Vision</h1>
       <div class="card mb-3">
@@ -1061,10 +1078,13 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <!-- Bootstrap libraries files -->
     <script src="bootstrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="bootstrap/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <!-- Bootstrap js files -->
     <script src="bootstrap/js/bootstrap.js"></script>
     <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <!-- Global js file -->
     <script src="wisepay.js"></script>
   </body>
 </html>

@@ -4,15 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WISEPAY</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5F627CD9");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Fonts -->
     <link
       rel="stylesheet"
       href="Fonts/Static font/Oswald-VariableFont_wght.ttf" />
     <link rel="stylesheet" href="Fonts/Static font/static/Oswald-Bold.ttf" />
+    <!-- bootstrap css file -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <!-- Global css file -->
     <link rel="stylesheet" href="./Css/wisepay.css" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5F627CD9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Start forget page -->
     <section class="sign-in d-flex align-items-center">
       <div class="img-container w-50">
         <img src="Images/Sign In2.png" alt="" />
@@ -47,11 +76,15 @@
         </form>
       </div>
     </section>
+    <!-- End forget page -->
 
+    <!-- Bootstrap libraries files -->
     <script src="bootstrap/js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="bootstrap/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <!-- Bootstrap js files -->
     <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <!-- Global js file -->
     <script src="wisepay.js"></script>
   </body>
 </html>
