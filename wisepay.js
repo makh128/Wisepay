@@ -201,17 +201,19 @@ function handelUserMsg() {
   }
 }
 
-// new topic btn
+// New topic btn
 
 function handelNewTopic() {
-  spinner.classList.add("d-none");
-  sageDiv.classList.remove("d-none");
-  userSigned.classList.remove("d-none");
-  userQuestions.classList.remove("d-none");
-  sageBody.innerHTML = "";
-  // Clear the chat messages
+  if (isLoggedIn) {
+    spinner.classList.add("d-none");
+    sageDiv.classList.remove("d-none");
+    userSigned.classList.remove("d-none");
+    userQuestions.classList.remove("d-none");
+    // Clear the chat messages
+    sageBody.innerHTML = "";
+  }
 }
-
+// handel sage answer
 function handelSageRep() {
   let sageRep = `
             <div class="sage-res position-relative my-4">

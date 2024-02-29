@@ -97,7 +97,7 @@ p {
   height: 72px;
   background: rgba(30, 23, 93, 0.4);
   position: absolute;
-  z-index: 2;
+  z-index: 1000;
 }
 .navbar-brand {
   width: 73px;
@@ -165,7 +165,7 @@ p {
   bottom: 2rem;
   position: fixed;
   cursor: pointer;
-  z-index: 200;
+  z-index: 100;
 }
 .sage-modal-box span {
   color: var(--unnamed-color-6638fb);
@@ -770,6 +770,9 @@ p {
 }
 
 @media (max-width: 768px) {
+  .footer-text {
+    flex-direction: column;
+  }
   /* Global rules responsive */
   .main-title {
     font-size: 30px;
