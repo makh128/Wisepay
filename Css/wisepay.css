@@ -624,45 +624,6 @@ p {
   background-position: right top;
 }
 
-.accordion .content-container .question {
-  position: relative;
-  font-size: 18px;
-  padding: 10px;
-  margin-bottom: 0;
-  cursor: pointer;
-  transition: 0.5s;
-  background-color: #f8f4fc;
-}
-.accordion .content-container .question::after {
-  content: "+";
-  position: absolute;
-  font-size: 25px;
-  color: var(--unnamed-color-707070);
-  top: 5px;
-  right: 5px;
-  transition: 0.5s;
-}
-.accordion .content-container .answer {
-  font-size: 18px;
-  width: 90%;
-  padding-top: 10px;
-  line-height: 1.5;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-}
-/* link with javascript active */
-
-.accordion .content-container.active .answer {
-  height: 150px;
-}
-.accordion .content-container.active .question {
-  font-size: 15px;
-}
-.accordion .content-container.active .question::after {
-  content: "x";
-  transition: 0.5s;
-}
 
 /* Media Queries All Pages*/
 
