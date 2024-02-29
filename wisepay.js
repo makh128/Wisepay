@@ -235,13 +235,15 @@ function handelSageRep() {
   sageBody.appendChild(tempElement);
 }
 
-// Handel simple question click test
+// Handel simple question click
 
 let simpleQuestions = document.querySelectorAll(".questions .question p");
 
 simpleQuestions.forEach((question) => {
   question.addEventListener("click", function (e) {
-    userInput.value = e.target.innerHTML;
-    handelUserMsg();
+    if (isLoggedIn) {
+          userInput.value = e.target.innerHTML;
+          handelUserMsg();
+    }
   });
 });

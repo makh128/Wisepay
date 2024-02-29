@@ -178,11 +178,7 @@ p {
 .sage-input {
   padding-right: 20px;
 }
-.income .income-icon {
-  padding: 0 8px;
-  border: 1px solid var(--unnamed-color-9f55f2);
-  border-radius: 50%;
-}
+
 .input-search {
   width: 50%;
 }
