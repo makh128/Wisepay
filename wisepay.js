@@ -84,13 +84,9 @@ for (let i = 0; i < accordion.length; i++) {
 
 const logPeople = [
   {
-    name: "Mahmoud",
-    userName: "mahmoud.mk507@gmail.com",
-    password: "mody",
-  },
-  {
-    userName: "ahmed.mk507@gmail.com",
-    password: "mody",
+    name: "WisePay",
+    userName: "wisepay@gmail.com",
+    password: "wisepay",
   },
 ];
 
@@ -174,7 +170,7 @@ const spinner = document.querySelector(".custom-loader");
 let userMessages = [];
 
 function handelUserMsg() {
-  if (userInput.value.trim() !== "") {
+  if (userInput.value.trim() !== "" && isLoggedIn) {
     sageDiv.classList.add("d-none");
     userSigned.classList.add("d-none");
     userQuestions.classList.add("d-none");
