@@ -191,6 +191,9 @@ p {
 .sage-input {
   padding-right: 20px;
 }
+.input-search {
+  width: 50%;
+}
 .modal-dialog {
   max-width: 80%;
 }
@@ -713,6 +716,27 @@ p {
   #contactModal .row #contact-form {
     margin-bottom: 20px;
   }
+  /* Sage Modal Responsive */
+  .search {
+    flex-direction: column;
+  }
+  .search .input-search {
+    width: 100%;
+    padding-right: 0;
+    margin: 10px;
+  }
+  .questions {
+    display: none;
+  }
+  .last-questions {
+    flex-direction: column;
+  }
+  .history ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 
 @media (max-width: 768px) {
@@ -809,8 +833,13 @@ p {
   .fs-17 {
     font-size: 14px;
   }
+  .fs-14 {
+    font-size: 10px;
+  }
   .main-title {
     font-size: 25px;
+  }
+  .history ul li {
   }
   /* Main Page */
   .navbar-ul {
@@ -879,6 +908,7 @@ p {
     width: 120px;
     height: 40px;
   }
+
   /* Blogs Page */
   .blogs-section .search {
     flex-direction: column;
@@ -905,5 +935,13 @@ p {
   #contactModal .row #contact-form,
   #contactModal .row #contact-heading {
     width: 100%;
+  }
+  .features .card,
+  .features-title {
+    text-align: center;
+  }
+  .sage-img {
+    width: 75px;
+    height: 75px;
   }
 }
