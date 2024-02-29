@@ -183,7 +183,7 @@ function handelUserMsg() {
       msg = `
     <div class="user-message position-relative my-4">
               <div class="user-image d-flex align-items-center">
-                <img src="Images/user.png" style="width: 40px" alt="" />
+                <img src="Images/user.png" style="width: 30px" alt="" />
                 <span class="fw-bold mx-2" id="userName">You</span>
               </div>
               <div class="user-question ">

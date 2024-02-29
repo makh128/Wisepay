@@ -304,10 +304,10 @@ p {
 }
 @keyframes moveUpDown {
   0% {
-    top: -18px; /* Initial position of the triangle */
+    top: -18px;
   }
   100% {
-    top: -15px; /* Final position of the triangle */
+    top: -15px;
   }
 }
 /* End Main Section */
@@ -319,7 +319,7 @@ p {
   background-color: #df5df2;
 }
 
-.ticker .ticker-line {
+/* .ticker .ticker-line {
   animation: ticker 25s linear infinite;
 }
 @keyframes ticker {
@@ -329,7 +329,7 @@ p {
   100% {
     transform: translateX(-1180px);
   }
-}
+} */
 
 /* End ticker Section*/
 
@@ -874,7 +874,7 @@ p {
     font-size: 14px;
   }
   .fs-14 {
-    font-size: 10px;
+    font-size: 9px;
   }
   .main-title {
     font-size: 25px;
