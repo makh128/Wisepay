@@ -234,3 +234,14 @@ function handelSageRep() {
   tempElement.innerHTML = sageRep;
   sageBody.appendChild(tempElement);
 }
+
+// Handel simple question click
+
+let simpleQuestions = document.querySelectorAll(".questions .question p");
+
+simpleQuestions.forEach((question) => {
+  question.addEventListener("click", function (e) {
+    userInput.value = e.target.innerHTML;
+    handelUserMsg();
+  });
+});
