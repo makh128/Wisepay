@@ -235,7 +235,7 @@ function handelSageRep() {
   sageBody.appendChild(tempElement);
 }
 
-// Handel simple question click
+// Handel simple question click test
 
 let simpleQuestions = document.querySelectorAll(".questions .question p");
 
