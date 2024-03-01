@@ -88,7 +88,12 @@ p {
   color: #000000;
   font-size: 17px;
 }
-
+.accordion-bg {
+  background-color: #f8f4fc;
+}
+.accordion-text-bg {
+  background-color: #fafafa;
+}
 /* End global rules */
 
 /* Start navbar */
@@ -623,8 +628,14 @@ p {
   background: url(../Images/bg_vision.png) no-repeat;
   background-position: right top;
 }
-
-
+.accordion-button::after {
+  background-image: none;
+  content: url(../Images/accordion-open.png);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: url(../Images/accordion-close.png);
+}
 /* Media Queries All Pages*/
 
 @media (max-width: 1200px) {
@@ -836,7 +847,7 @@ p {
     font-size: 14px;
   }
   .fs-14 {
-    font-size: 9px;
+    font-size: 11px;
   }
   .main-title {
     font-size: 25px;
